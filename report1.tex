@@ -1,0 +1,224 @@
+\documentclass[12pt,a4paper]{report}
+
+% --- Cấu hình Tiếng Việt cho pdfLaTeX ---
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{times} 
+
+% --- THIẾT LẬP LỀ TRANG ---
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2cm, left=2.5cm, right=2cm}
+
+% --- THIẾT LẬP CỠ CHỮ CƠ BẢN 13PT ---
+\usepackage[fontsize=13pt]{scrextend}
+
+\usepackage[x11names,dvipsnames,svgnames,table]{xcolor} 
+\usepackage{graphicx}
+\usepackage[space]{grffile} 
+\usepackage{float} 
+\usepackage{amsmath} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs} 
+\usepackage{longtable} 
+\usepackage{array}
+
+% --- CẤU HÌNH HEADERS ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\centering\bfseries\fontsize{18pt}{22pt}\selectfont}
+  {\chaptertitlename\ \thechapter}
+  {10pt}
+  {\fontsize{16pt}{20pt}\selectfont}
+
+\titleformat{\section}
+  {\bfseries\fontsize{14pt}{16.8pt}\selectfont}
+  {\thesection}
+  {1em}
+  {}
+
+\titleformat{\subsection}
+  {\bfseries\fontsize{13pt}{15.6pt}\selectfont}
+  {\thesubsection}
+  {1em}
+  {}
+
+% --- KHOẢNG CÁCH TIÊU ĐỀ ---
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+
+% --- THỤT ĐẦU DÒNG VÀ KHOẢNG CÁCH ĐOẠN ---
+\usepackage{indentfirst}
+\setlength{\parindent}{0.5cm}
+\setlength{\parskip}{12pt}
+
+% --- CẤU HÌNH CAPTION ---
+\usepackage{caption}
+\DeclareCaptionFont{size11}{\fontsize{11pt}{13.2pt}\selectfont}
+\captionsetup{font={it, size11}}
+
+% --- TRANG BÌA ---
+\usepackage{tikz}
+\usepackage{setspace}
+
+% --- CẤU HÌNH HEADER VÀ FOOTER ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\fontsize{8pt}{9.6pt}\selectfont Hồ Quốc Thắng 23129398}
+\fancyfoot[C]{\fontsize{8pt}{9.6pt}\selectfont Bảo quản \& chế biến thuỷ sản | Aquatic Products Preservation and Processing Technologies | Nguyễn Anh Trinh}
+\fancyfoot[R]{\fontsize{8pt}{9.6pt}\selectfont \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\graphicspath{{E:/study/KNVSTP/}}
+
+\begin{document}
+
+% --- TRANG BÌA ---
+\pagenumbering{gobble}
+\pagestyle{empty}
+\begin{titlepage}
+\begin{tikzpicture}[remember picture, overlay]
+  \draw[line width=2.5pt] ([xshift=1.2cm, yshift=-1.2cm]current page.north west) rectangle ([xshift=-1.2cm, yshift=1.2cm]current page.south east);
+  \draw[line width=0.8pt] ([xshift=1.45cm, yshift=-1.45cm]current page.north west) rectangle ([xshift=-1.45cm, yshift=1.45cm]current page.south east);
+\end{tikzpicture}
+\begin{center}
+\vspace*{0.4cm}
+{\fontsize{13pt}{16pt}\selectfont\textbf{BỘ GIÁO DỤC VÀ ĐÀO TẠO}}\\
+{\fontsize{13pt}{16pt}\selectfont\textbf{TRƯỜNG ĐẠI HỌC NÔNG LÂM TP.HCM}}\\
+{\fontsize{13pt}{16pt}\selectfont\textbf{KHOA CÔNG NGHỆ HÓA HỌC VÀ THỰC PHẨM}}
+\vspace{1.5cm}
+
+{\fontsize{18pt}{22pt}\selectfont\textbf{BÁO CÁO TỔNG HỢP}}
+
+\vspace{0.8cm}
+{\fontsize{16pt}{20pt}\selectfont\textbf{BẢO QUẢN \& CHẾ BIẾN THỦY SẢN}}
+
+\vspace{2.5cm}
+\end{center}
+\noindent
+{\fontsize{13pt}{16pt}\selectfont\textbf{GVGD:} Nguyễn Anh Trinh}\\
+\vspace{0.8cm}
+\begin{center}
+{\fontsize{13pt}{16pt}\selectfont\textbf{Sinh viên thực hiện}}\\[6pt]
+\begin{tabular}{@{\hspace{0.5cm}} p{6cm} @{\hspace{1.5cm}} p{3cm} @{\hspace{0.5cm}}}
+\toprule
+\textbf{Họ và tên} & \textbf{MSSV} \\
+\midrule
+Hồ Quốc Thắng     & 23129398 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\vfill
+\begin{center}
+{\fontsize{13pt}{16pt}\selectfont\textbf{Thành phố Hồ Chí Minh, tháng 4/2026}}
+\end{center}
+\end{titlepage}
+
+% --- MỤC LỤC ---
+\renewcommand{\contentsname}{MỤC LỤC}
+\tableofcontents
+\newpage
+
+% --- NỘI DUNG CHÍNH ---
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{fancy}
+
+\chapter{Phân tích Chuyên sâu về Hình thái, Thành phần Dinh dưỡng và Biến đổi Sinh hóa trong Chế biến Bảo quản Bạch tuộc}
+
+\section*{LỜI MỞ ĐẦU}
+\addcontentsline{toc}{section}{LỜI MỞ ĐẦU}
+
+Sự phát triển của ngành khoa học thực phẩm hiện đại đòi hỏi một cái nhìn toàn diện và có hệ thống về các đối tượng thủy sản có giá trị kinh tế cao, trong đó bạch tuộc (Octopus) nổi lên như một mô hình nghiên cứu đặc biệt phức tạp. Thuộc ngành Động vật thân mềm (Mollusca), lớp Chân đầu (Cephalopoda), bạch tuộc không chỉ sở hữu những đặc điểm hình thái và giải phẫu học độc đáo mà còn thể hiện những cơ chế sinh hóa hậu tử (postmortem) khác biệt hoàn toàn so với các loài cá vây (teleost) truyền thống. Việc hiểu rõ các con đường chuyển hóa năng lượng, cơ chế phân hủy hợp chất nitơ và tác động của các yếu tố ngoại cảnh đến cấu trúc mô cơ là nền tảng cốt lõi để tối ưu hóa quy trình bảo quản, từ các phương pháp truyền thống như ướp đá đến các công nghệ tiên tiến như xử lý áp suất cao (HPP) hay màng bao sinh học.
+
+\section{Hệ thống Phân loại và Đặc điểm Hình thái Chức năng}
+
+Bạch tuộc được phân loại một cách khoa học vào ngành Động vật thân mềm (Mollusca), lớp Chân đầu (Cephalopoda), bộ Octopoda \cite{ck12_mollusca}. Trong cây tiến hóa của nhóm động vật không xương sống, Cephalopoda đại diện cho đỉnh cao của sự thích nghi với lối sống săn mồi năng động, được minh chứng bởi hệ thống thần kinh tập trung hóa cao độ, não bộ phát triển và hệ thống tuần hoàn kín duy nhất trong ngành Mollusca \cite{ck12_mollusca}. Khác với các họ hàng gần như ốc sên (Gastropoda) hay trai hàu (Bivalvia), bạch tuộc đã trải qua quá trình tiến hóa loại bỏ hoàn toàn vỏ cứng bảo vệ bên ngoài để đổi lấy sự linh hoạt tối đa trong di chuyển và ngụy trang \cite{ck12_mollusca}.
+
+\subsection{Cấu trúc Hình thái và Biomechanic của Hệ cơ}
+
+Cơ thể bạch tuộc được chia thành ba phần chính: phần đầu (head) chứa các cơ quan cảm giác và não bộ; phần thân hay khối nội tạng (mantle) chứa hệ tiêu hóa, bài tiết và sinh sản; và hệ thống tám cánh tay (arms) bao quanh miệng \cite{ck12_mollusca}. Sự thiếu vắng khung xương cứng khiến bạch tuộc phải dựa vào nguyên lý "bộ xương thủy tĩnh" (hydrostatic skeleton), nơi áp suất chất lỏng trong các mô cơ được điều chỉnh để tạo ra lực và sự chuyển động \cite{wgnhs_cephalopod}.
+
+Cấu trúc mô cơ của cánh tay bạch tuộc là một trong những hệ thống cơ học tinh vi nhất trong tự nhiên. Nghiên cứu trên các loài như \textit{Octopus bimaculoides} và \textit{Abdopus aculeatus} đã xác nhận rằng toàn bộ hệ cơ nội tại trong cánh tay đều thuộc loại cơ vân xiên (obliquely striated muscle) \cite{pmc_musculature}.
+
+\begin{table}[H]
+\centering
+\caption{So sánh Đặc điểm Hình thái và Giải phẫu giữa Bạch tuộc và các Nhóm Thân mềm khác}
+\begin{tabular}{p{3.5cm} p{5.5cm} p{5.5cm}}
+\toprule
+\textbf{Đặc điểm} & \textbf{Bạch tuộc (Cephalopoda)} & \textbf{Thân mềm có vỏ} \\
+\midrule
+Vỏ bảo vệ & Không có & Có vỏ cứng \\
+Hệ tuần hoàn & Kín & Mở \\
+Hệ thần kinh & Tập trung, não bộ lớn & Phân tán, đơn giản \\
+Cơ quan di chuyển & Cánh tay và phễu phun & Chân cơ \\
+Loại mô cơ chính & Cơ vân xiên & Cơ trơn \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Thành phần Hóa học và Giá trị Dinh dưỡng Chuyên biệt}
+
+Bạch tuộc được coi là một nguồn "siêu thực phẩm" từ đại dương nhờ hồ sơ dinh dưỡng ưu việt, đặc trưng bởi hàm lượng protein cao, lipid cực thấp và sự phong phú của các hợp chất sinh học có lợi \cite{mdpi_algarve}.
+
+\subsection{Protein và Các hợp chất Nitơ phi Protein (NPN)}
+
+Hàm lượng protein trong thịt bạch tuộc tươi dao động từ 16,2\% đến 17,7\%, chiếm khoảng 70-80\% tổng hàm lượng chất khô \cite{mdpi_algarve}. Tuy nhiên, điểm tạo nên sự khác biệt về hương vị chính là hàm lượng hợp chất nitơ phi protein (NPN) rất cao, chiếm từ 25\% đến 38\% tổng nitơ hòa tan \cite{researchgate_amino}.
+
+\section{Biến đổi Sinh hóa Hậu tử và Cơ chế Tê cứng}
+
+\subsection{Con đường Chuyển hóa Năng lượng kỵ khí}
+
+Sản phẩm cuối cùng của quá trình phân hủy kỵ khí ở bạch tuộc là Octopine thay vì Acid Lactic \cite{fao_ch10}. Điều này giúp pH cơ thịt ổn định ở mức cao (6,2 - 6,6), tạo điều kiện cho vi khuẩn phát triển \cite{scielo_quality}.
+
+\section{Phân hủy TMAO và Cơ chế Làm dai do Formaldehyde}
+
+Sự hình thành formaldehyde (FA) từ TMAO là nguyên nhân chính gây ra hiện tượng cơ thịt bị dai và mất khả năng giữ nước (WHC) trong quá trình bảo quản đông lạnh \cite{researchgate_fa, pmc_crosslinking}.
+
+\section{Công nghệ Bảo quản và Chế biến Hiện đại}
+
+\subsection{Xử lý Áp suất cao (HPP)}
+
+HPP (400-600 MPa) có khả năng tiêu diệt vi sinh vật mầm bệnh và ức chế enzyme mà không cần nhiệt, giúp giữ nguyên độ tươi ngon \cite{hiperbaric_hpp}.
+
+\section{Kết luận}
+
+Bạch tuộc là thực phẩm quý giá nhưng nhạy cảm. Việc ứng dụng công nghệ HPP kết hợp với kiểm soát nhiệt độ nghiêm ngặt là hướng đi bền vững để duy trì chất lượng sản phẩm.
+
+% --- TÀI LIỆU THAM KHẢO CHƯƠNG 1 (THỦ CÔNG) ---
+\renewcommand{\bibname}{Tài liệu tham khảo Chương 1}
+\begin{thebibliography}{99}
+\addcontentsline{toc}{section}{Tài liệu tham khảo Chương 1}
+
+\bibitem{ck12_mollusca} CK-12 Foundation. (2026). Phylum Mollusca. \url{https://flexbooks.ck12.org/cbook/ck-12-cbse-biology-class-11/section/4.10/primary/lesson/phylum-mollusca/}
+
+\bibitem{lumen_mollusca} Lumen Learning. Phylum Mollusca | Biology for Majors II. \url{https://courses.lumenlearning.com/wm-biology2/chapter/phylum-mollusca/}
+
+\bibitem{wgnhs_cephalopod} WGNHS. Cephalopod Mollusks: Squid and Octopus. \url{https://home.wgnhs.wisc.edu/wisconsin-geology/fossils/cephalopod-mollusks-squid-octopus/}
+
+\bibitem{pmc_musculature} PMC. Diverse musculature layers in three species of octopus support precise motor control. \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC12419884/}
+
+\bibitem{mdpi_algarve} MDPI. Comprehensive Characterization of the Algarve Octopus, Octopus vulgaris. \url{https://www.mdpi.com/2076-3417/15/15/8235}
+
+\bibitem{researchgate_amino} ResearchGate. Amino acid composition of early stages of cephalopods. \url{https://www.researchgate.net/publication/222430649_Amino_acid_composition_of_early_stages_of_cephalopods}
+
+\bibitem{fao_ch10} FAO. Chapter 10: Cephalopods. \url{https://www.fao.org/4/v7180e/v7180e0a.htm}
+
+\bibitem{scielo_quality} Scielo. Quality indicators and shelf life of red octopus (Octopus maya) in chilling storage. \url{https://www.scielo.br/j/cta/a/jGZqMQTycbk3JJ5SQPskHnK/}
+
+\bibitem{pmc_crosslinking} PMC. Effects of different protein cross-linking degrees on gelling properties. \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC11101881/}
+
+\bibitem{researchgate_fa} ResearchGate. Reduction of formaldehyde residues in jumbo squid. \url{https://www.researchgate.net/publication/326670590_Reduction_of_formaldehyde_residues}
+
+\bibitem{hiperbaric_hpp} Hiperbaric. Unlocking the benefits of high pressure processing (HPP) for octopus. \url{https://www.hiperbaric.com/en/unlocking-the-benefits-of-high-pressure-processing-hpp-for-octopus/}
+
+\bibitem{pubmed_peptide} PubMed. Octopus-derived antioxidant peptide protects against oxidative stress. \url{https://pubmed.ncbi.nlm.nih.gov/36348803/}
+
+\bibitem{pmc_ommochrome} PMC. Inhibition of Pathogenic Bacteria by Octopus Ommochrome Pigments. \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC9628961/}
+
+\end{thebibliography}
+
+\end{document}

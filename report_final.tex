@@ -1,0 +1,662 @@
+\documentclass[12pt,a4paper]{report}
+
+% --- Cấu hình Tiếng Việt cho pdfLaTeX ---
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{times} 
+
+% --- THIẾT LẬP LỀ TRANG ---
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2cm, left=2.5cm, right=2cm}
+
+% --- THIẾT LẬP CỠ CHỮ CƠ BẢN 13PT ---
+\usepackage[fontsize=13pt]{scrextend}
+
+\usepackage[x11names,dvipsnames,svgnames,table]{xcolor} 
+\usepackage{graphicx}
+\usepackage[space]{grffile} 
+\usepackage{float} 
+\usepackage{amsmath} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs} 
+\usepackage{longtable} 
+\usepackage{array}
+
+% --- CẤU HÌNH HEADERS ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\centering\bfseries\fontsize{18pt}{22pt}\selectfont}
+  {\chaptertitlename\ \thechapter}
+  {10pt}
+  {\fontsize{16pt}{20pt}\selectfont}
+
+\titleformat{\section}
+  {\bfseries\fontsize{14pt}{16.8pt}\selectfont}
+  {\thesection}
+  {1em}
+  {}
+
+\titleformat{\subsection}
+  {\bfseries\fontsize{13pt}{15.6pt}\selectfont}
+  {\thesubsection}
+  {1em}
+  {}
+
+% --- KHOẢNG CÁCH TIÊU ĐỀ ---
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+
+% --- THỤT ĐẦU DÒNG VÀ KHOẢNG CÁCH ĐOẠN ---
+\usepackage{indentfirst}
+\setlength{\parindent}{0.5cm}
+\setlength{\parskip}{12pt}
+
+% --- CẤU HÌNH CAPTION ---
+\usepackage{caption}
+\DeclareCaptionFont{size11}{\fontsize{11pt}{13.2pt}\selectfont}
+\captionsetup{font={it, size11}}
+
+% --- TRANG BÌA ---
+\usepackage{tikz}
+\usepackage{setspace}
+
+% --- CẤU HÌNH HEADER VÀ FOOTER ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\fontsize{8pt}{9.6pt}\selectfont Hồ Quốc Thắng 23129398}
+\fancyfoot[C]{\fontsize{8pt}{9.6pt}\selectfont Bảo quản \& chế biến thuỷ sản | Aquatic Products Preservation and Processing Technologies | Nguyễn Anh Trinh}
+\fancyfoot[R]{\fontsize{8pt}{9.6pt}\selectfont \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\graphicspath{{E:/study/KNVSTP/}}
+
+\begin{document}
+
+% --- TRANG BÌA ---
+\pagenumbering{gobble}
+\pagestyle{empty}
+\begin{titlepage}
+\begin{tikzpicture}[remember picture, overlay]
+  % Khung ngoài
+  \draw[line width=2.5pt]
+    ([xshift=1.2cm, yshift=-1.2cm]current page.north west)
+    rectangle
+    ([xshift=-1.2cm, yshift=1.2cm]current page.south east);
+  % Khung trong
+  \draw[line width=0.8pt]
+    ([xshift=1.45cm, yshift=-1.45cm]current page.north west)
+    rectangle
+    ([xshift=-1.45cm, yshift=1.45cm]current page.south east);
+\end{tikzpicture}
+
+\begin{center}
+
+\vspace*{0.4cm}
+{\fontsize{13pt}{16pt}\selectfont\textbf{BỘ GIÁO DỤC VÀ ĐÀO TẠO}}\\
+{\fontsize{13pt}{16pt}\selectfont\textbf{TRƯỜNG ĐẠI HỌC NÔNG LÂM TP.HCM}}\\
+{\fontsize{13pt}{16pt}\selectfont\textbf{KHOA CÔNG NGHỆ HÓA HỌC VÀ THỰC PHẨM}}
+
+\vspace{0.6cm}
+
+\includegraphics[width=4.5cm]{0.jpg}
+
+\vspace{0.8cm}
+
+{\fontsize{18pt}{22pt}\selectfont\textbf{BÀI TẬP VỀ NHÀ}}
+
+\vspace{0.4cm}
+
+{\fontsize{16pt}{20pt}\selectfont\textbf{BẢO QUẢN \& CHẾ BIẾN THỦY SẢN}}
+
+\vspace{1.6cm}
+
+\end{center}
+
+\noindent
+{\fontsize{13pt}{16pt}\selectfont\textbf{GVGD:} Nguyễn Anh Trinh}\\
+{\fontsize{13pt}{16pt}\selectfont\textbf{}}
+
+\vspace{0.8cm}
+
+\begin{center}
+{\fontsize{13pt}{16pt}\selectfont\textbf{Sinh viên thực hiện}}\\[6pt]
+\begin{tabular}{@{\hspace{0.5cm}} p{6cm} @{\hspace{1.5cm}} p{3cm} @{\hspace{0.5cm}}}
+\toprule
+\textbf{Họ và tên} & \textbf{MSSV} \\
+\midrule
+Hồ Quốc Thắng     & 23129398 \\[3pt]
+
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vfill
+
+\begin{center}
+{\fontsize{13pt}{16pt}\selectfont\textbf{Thành phố Hồ Chí Minh, tháng 3/2026}}
+\end{center}
+
+
+\end{titlepage}
+
+% --- TRANG MỤC LỤC ---
+\renewcommand{\contentsname}{MỤC LỤC}
+\tableofcontents
+\newpage
+
+% --- NỘI DUNG CHÍNH ---
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{fancy}
+
+\chapter{Phân tích Chuyên sâu về Hình thái, Thành phần Dinh dưỡng và Biến đổi Sinh hóa trong Chế biến Bảo quản Bạch tuộc}
+
+\section*{LỜI MỞ ĐẦU}
+\addcontentsline{toc}{section}{LỜI MỞ ĐẦU}
+
+Sự phát triển của ngành khoa học thực phẩm hiện đại đòi hỏi một cái nhìn toàn diện và có hệ thống về các đối tượng thủy sản có giá trị kinh tế cao, trong đó bạch tuộc (Octopus) nổi lên như một mô hình nghiên cứu đặc biệt phức tạp. Thuộc ngành Động vật thân mềm (Mollusca), lớp Chân đầu (Cephalopoda), bạch tuộc không chỉ sở hữu những đặc điểm hình thái và giải phẫu học độc đáo mà còn thể hiện những cơ chế sinh hóa hậu tử (postmortem) khác biệt hoàn toàn so với các loài cá vây (teleost) truyền thống. Việc hiểu rõ các con đường chuyển hóa năng lượng, cơ chế phân hủy hợp chất nitơ và tác động của các yếu tố ngoại cảnh đến cấu trúc mô cơ là nền tảng cốt lõi để tối ưu hóa quy trình bảo quản, từ các phương pháp truyền thống như ướp đá đến các công nghệ tiên tiến như xử lý áp suất cao (HPP) hay màng bao sinh học.
+
+\section{Hệ thống Phân loại và Đặc điểm Hình thái Chức năng}
+
+Bạch tuộc được phân loại một cách khoa học vào ngành Động vật thân mềm (Mollusca), lớp Chân đầu (Cephalopoda), bộ Octopoda \cite{ck12_mollusca}. Trong cây tiến hóa của nhóm động vật không xương sống, Cephalopoda đại diện cho đỉnh cao của sự thích nghi với lối sống săn mồi năng động, được minh chứng bởi hệ thống thần kinh tập trung hóa cao độ, não bộ phát triển và hệ thống tuần hoàn kín duy nhất trong ngành Mollusca \cite{ck12_mollusca}. Khác với các họ hàng gần như ốc sên (Gastropoda) hay trai hàu (Bivalvia), bạch tuộc đã trải qua quá trình tiến hóa loại bỏ hoàn toàn vỏ cứng bảo vệ bên ngoài để đổi lấy sự linh hoạt tối đa trong di chuyển và ngụy trang \cite{ck12_mollusca}.
+
+\subsection{Cấu trúc Hình thái và Biomechanic của Hệ cơ}
+
+Cơ thể bạch tuộc được chia thành ba phần chính: phần đầu (head) chứa các cơ quan cảm giác và não bộ; phần thân hay khối nội tạng (mantle) chứa hệ tiêu hóa, bài tiết và sinh sản; và hệ thống tám cánh tay (arms) bao quanh miệng \cite{ck12_mollusca}. Sự thiếu vắng khung xương cứng khiến bạch tuộc phải dựa vào nguyên lý "bộ xương thủy tĩnh" (hydrostatic skeleton), nơi áp suất chất lỏng trong các mô cơ được điều chỉnh để tạo ra lực và sự chuyển động \cite{wgnhs_cephalopod}.
+
+Cấu trúc mô cơ của cánh tay bạch tuộc là một trong những hệ thống cơ học tinh vi nhất trong tự nhiên. Nghiên cứu trên các loài như \textit{Octopus bimaculoides} và \textit{Abdopus aculeatus} đã xác nhận rằng toàn bộ hệ cơ nội tại trong cánh tay đều thuộc loại cơ vân xiên (obliquely striated muscle) \cite{pmc_musculature}.
+
+\begin{table}[H]
+\centering
+\caption{So sánh Đặc điểm Hình thái và Giải phẫu giữa Bạch tuộc và các Nhóm Thân mềm khác}
+\begin{tabular}{p{3.5cm} p{5.5cm} p{5.5cm}}
+\toprule
+\textbf{Đặc điểm} & \textbf{Bạch tuộc (Cephalopoda)} & \textbf{Thân mềm có vỏ} \\
+\midrule
+Vỏ bảo vệ & Không có & Có vỏ cứng \\
+Hệ tuần hoàn & Kín & Mở \\
+Hệ thần kinh & Tập trung, não bộ lớn & Phân tán, đơn giản \\
+Cơ quan di chuyển & Cánh tay và phễu phun & Chân cơ \\
+Loại mô cơ chính & Cơ vân xiên & Cơ trơn \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Thành phần Hóa học và Giá trị Dinh dưỡng Chuyên biệt}
+
+Bạch tuộc được coi là một nguồn "siêu thực phẩm" từ đại dương nhờ hồ sơ dinh dưỡng ưu việt, đặc trưng bởi hàm lượng protein cao, lipid cực thấp và sự phong phú của các hợp chất sinh học có lợi \cite{mdpi_algarve}.
+
+\subsection{Protein và Các hợp chất Nitơ phi Protein (NPN)}
+
+Hàm lượng protein trong thịt bạch tuộc tươi dao động từ 16,2\% đến 17,7\%, chiếm khoảng 70-80\% tổng hàm lượng chất khô \cite{mdpi_algarve}. Tuy nhiên, điểm tạo nên sự khác biệt về hương vị chính là hàm lượng hợp chất nitơ phi protein (NPN) rất cao, chiếm từ 25\% đến 38\% tổng nitơ hòa tan \cite{researchgate_amino}.
+
+\section{Biến đổi Sinh hóa Hậu tử và Cơ chế Tê cứng}
+
+\subsection{Con đường Chuyển hóa Năng lượng kỵ khí}
+
+Sản phẩm cuối cùng của quá trình phân hủy kỵ khí ở bạch tuộc là Octopine thay vì Acid Lactic \cite{fao_ch10}. Điều này giúp pH cơ thịt ổn định ở mức cao (6,2 - 6,6), tạo điều kiện cho vi khuẩn phát triển \cite{scielo_quality}.
+
+\section{Phân hủy TMAO và Cơ chế Làm dai do Formaldehyde}
+
+Sự hình thành formaldehyde (FA) từ TMAO là nguyên nhân chính gây ra hiện tượng cơ thịt bị dai và mất khả năng giữ nước (WHC) trong quá trình bảo quản đông lạnh \cite{researchgate_fa, pmc_crosslinking}.
+
+\section{Công nghệ Bảo quản và Chế biến Hiện đại}
+
+\subsection{Xử lý Áp suất cao (HPP)}
+
+HPP (400-600 MPa) có khả năng tiêu diệt vi sinh vật mầm bệnh và ức chế enzyme mà không cần nhiệt, giúp giữ nguyên độ tươi ngon \cite{hiperbaric_hpp}.
+
+\section{Kết luận}
+
+Bạch tuộc là thực phẩm quý giá nhưng nhạy cảm. Việc ứng dụng công nghệ HPP kết hợp với kiểm soát nhiệt độ nghiêm ngặt là hướng đi bền vững để duy trì chất lượng sản phẩm.
+
+% --- TÀI LIỆU THAM KHẢO CHƯƠNG 1 (THỦ CÔNG) ---
+\renewcommand{\bibname}{Tài liệu tham khảo Chương 1}
+\begin{thebibliography}{99}
+\addcontentsline{toc}{section}{Tài liệu tham khảo Chương 1}
+
+\bibitem{ck12_mollusca} CK-12 Foundation. (2026). Phylum Mollusca. \url{https://flexbooks.ck12.org/cbook/ck-12-cbse-biology-class-11/section/4.10/primary/lesson/phylum-mollusca/}
+
+\bibitem{lumen_mollusca} Lumen Learning. Phylum Mollusca | Biology for Majors II. \url{https://courses.lumenlearning.com/wm-biology2/chapter/phylum-mollusca/}
+
+\bibitem{wgnhs_cephalopod} WGNHS. Cephalopod Mollusks: Squid and Octopus. \url{https://home.wgnhs.wisc.edu/wisconsin-geology/fossils/cephalopod-mollusks-squid-octopus/}
+
+\bibitem{pmc_musculature} PMC. Diverse musculature layers in three species of octopus support precise motor control. \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC12419884/}
+
+\bibitem{mdpi_algarve} MDPI. Comprehensive Characterization of the Algarve Octopus, Octopus vulgaris. \url{https://www.mdpi.com/2076-3417/15/15/8235}
+
+\bibitem{researchgate_amino} ResearchGate. Amino acid composition of early stages of cephalopods. \url{https://www.researchgate.net/publication/222430649_Amino_acid_composition_of_early_stages_of_cephalopods}
+
+\bibitem{fao_ch10} FAO. Chapter 10: Cephalopods. \url{https://www.fao.org/4/v7180e/v7180e0a.htm}
+
+\bibitem{scielo_quality} Scielo. Quality indicators and shelf life of red octopus (Octopus maya) in chilling storage. \url{https://www.scielo.br/j/cta/a/jGZqMQTycbk3JJ5SQPskHnK/}
+
+\bibitem{pmc_crosslinking} PMC. Effects of different protein cross-linking degrees on gelling properties. \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC11101881/}
+
+\bibitem{researchgate_fa} ResearchGate. Reduction of formaldehyde residues in jumbo squid. \url{https://www.researchgate.net/publication/326670590_Reduction_of_formaldehyde_residues}
+
+\bibitem{hiperbaric_hpp} Hiperbaric. Unlocking the benefits of high pressure processing (HPP) for octopus. \url{https://www.hiperbaric.com/en/unlocking-the-benefits-of-high-pressure-processing-hpp-for-octopus/}
+
+\bibitem{pubmed_peptide} PubMed. Octopus-derived antioxidant peptide protects against oxidative stress. \url{https://pubmed.ncbi.nlm.nih.gov/36348803/}
+
+\bibitem{pmc_ommochrome} PMC. Inhibition of Pathogenic Bacteria by Octopus Ommochrome Pigments. \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC9628961/}
+
+\end{thebibliography}
+
+
+\chapter{Đánh giá chất lượng, sự biến đổi và phương pháp xác định độ tươi của Bạch tuộc (Octopus) sau thu hoạch}
+
+Sự hiểu biết sâu sắc về các đặc tính sinh học, hóa học và vật lý của bạch tuộc (\textit{Octopus}) là nền tảng cốt yếu để duy trì giá trị kinh tế và an toàn thực phẩm trong ngành công nghiệp thủy sản. Động vật chân đầu, cụ thể là bạch tuộc, đại diện cho một nguồn protein chất lượng cao với tỷ lệ phần thịt ăn được vượt trội, thường chiếm từ 80\% đến 85\% trọng lượng cơ thể, cao hơn đáng kể so với các loài giáp xác hay cá xương \cite{pubmed_ice_storage}. Tuy nhiên, bản chất dễ hư hỏng của chúng đặt ra những thách thức lớn trong công tác bảo quản và đánh giá chất lượng. Sự suy giảm chất lượng bắt đầu ngay sau khi con vật bị đánh bắt, bị thúc đẩy bởi một loạt các phản ứng sinh hóa nội tại và sự xâm nhập của hệ vi sinh vật từ môi trường biển \cite{mdpi_fish_spoilage}. 
+
+Báo cáo này sẽ phân tích một cách chi tiết và toàn diện về khái niệm độ tươi, các cơ chế hư hỏng đặc thù và các phương pháp tiên tiến để xác định tình trạng chất lượng của bạch tuộc sau thu hoạch.
+
+\section{Khái niệm và đặc điểm sinh học của bạch tuộc tươi}
+
+\subsection{Định nghĩa độ tươi trong bối cảnh sinh hóa và thương mại}
+
+Độ tươi của bạch tuộc không chỉ là một trạng thái cảm quan mà còn là một chỉ số phản ánh tính nguyên vẹn của cấu trúc tế bào và sự ổn định của các hệ thống enzyme nội tại. Một cách chính xác, bạch tuộc tươi được định nghĩa là trạng thái sinh lý của con vật vừa mới được đánh bắt hoặc thu hoạch từ môi trường tự nhiên, chưa trải qua bất kỳ hình thức xử lý nhiệt, làm đông sâu, hay can thiệp bằng các hóa chất bảo quản nhân tạo \cite{tcvn_7265}. Trong trạng thái này, các đặc tính sinh hóa của mô cơ phải tương đương với trạng thái sống, với nồng độ các hợp chất nitơ bay hơi ở mức tối thiểu và hệ thống năng lượng tế bào (ATP) chưa bị phân hủy sâu sắc \cite{researchgate_squid_freshness}.
+
+Về mặt kỹ thuật, độ tươi được duy trì khi các màng bào quan (như lysosome) còn nguyên vẹn, ngăn chặn sự giải phóng các protease vào bào tương để bắt đầu quá trình tự phân giải \cite{agri_inst_ph}. Bất kỳ dấu hiệu nào của sự hư hỏng, dù là sự biến đổi màu sắc nhẹ do oxy hóa hay sự thay đổi cấu trúc cơ thịt do enzyme, đều đồng nghĩa với việc sản phẩm đã bắt đầu rời bỏ trạng thái tươi nguyên thủy. Việc làm lạnh ngay lập tức sau thu hoạch xuống gần $0^\circ C$ là phương pháp duy nhất được chấp nhận để duy trì trạng thái "tươi" trong một khoảng thời gian ngắn mà không làm thay đổi bản chất của thực phẩm \cite{dialnet_patagonian}.
+
+\subsection{Nhận diện tổng quan và hệ thống cảm giác hóa học (Chemotactile)}
+
+Việc nhận diện bạch tuộc tươi thông qua các giác quan vẫn được coi là phương pháp nhanh chóng và chính xác nhất trong thực tế sản xuất. Bạch tuộc chất lượng tốt sở hữu lớp da bóng sáng, màu sắc phân định rõ rệt với các sắc tố sống động \cite{pubmed_ice_storage}. Điều này liên quan trực tiếp đến cấu trúc của các túi sắc tố (\textit{chromatophores}), những cơ quan thần kinh-cơ phức tạp cho phép bạch tuộc thay đổi màu sắc khi còn sống \cite{pmc_color_change}. Khi con vật vừa mới chết, các cơ này vẫn giữ được trạng thái cấu trúc ổn định, tạo nên vẻ ngoài sáng bóng tự nhiên.
+
+Một đặc điểm sinh học độc đáo của bạch tuộc là hệ thống cảm giác hóa học tập trung ở các giác bám (\textit{suckers}). Bạch tuộc sử dụng các giác bám này để "nếm bằng cách chạm" (\textit{taste by touch}), cho phép chúng phát hiện các phân tử ít hòa tan trong môi trường thông qua các thụ thể hóa học (CRs) chuyên biệt \cite{pmc_chemotactile}. Khi bạch tuộc còn tươi, các giác bám này phải nguyên vẹn, có độ bám dính tự nhiên và không có dấu hiệu bị bao phủ bởi lớp chất nhầy đục \cite{pmc_food_choice}.
+
+\begin{table}[H]
+\centering
+\caption{Chỉ tiêu cảm quan nhận diện bạch tuộc tươi chất lượng cao}
+\begin{tabular}{p{3cm} p{6cm} p{5.5cm}}
+\toprule
+\textbf{Chỉ tiêu} & \textbf{Đặc điểm bạch tuộc tươi} & \textbf{Tầm quan trọng} \\
+\midrule
+Da và màu sắc & Da bóng, ẩm, sắc tố nâu xám hoặc hơi xanh ở lưng rõ rệt; bụng trắng sáng \cite{happyfood_tips} & Phản ánh túi sắc tố và oxy hóa. \\
+Mắt & Con người đen bóng, giác mạc trong suốt, không vệt máu \cite{pubmed_ice_storage} & Nhạy cảm với mất nước, vi khuẩn. \\
+Cơ thịt & Chắc chắn, đàn hồi cao, không vết lõm khi ấn \cite{fptshop_so_che} & Trạng thái protein myofibrillar. \\
+Mùi & Mùi rong biển tươi, mùi biển, không mùi lạ \cite{pubmed_ice_storage} & Chưa phân hủy amin/lipid. \\
+Xúc tu & Cuộn tròn tự nhiên, giác bám nguyên vẹn \cite{pubmed_ice_storage} & Trạng thái thần kinh-cơ. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Các cơ chế làm suy giảm chất lượng và hư hỏng ở bạch tuộc}
+
+Sự hư hỏng của bạch tuộc bắt đầu từ những thay đổi sinh hóa nội tại và kết thúc bằng sự phân hủy hoàn toàn do vi sinh vật. Ba cơ chế chính gồm: tự phân giải enzyme, oxy hóa lipid/sắc tố và vi sinh vật \cite{mdpi_fish_spoilage}.
+
+\subsection{Sự tự phân giải bằng enzyme (Enzymatic Autolysis)}
+
+Hoạt động autolytic trong cơ cánh tay bạch tuộc cao gấp 40-500 lần so với cá xương \cite{researchgate_proteolytic}.
+
+\textbf{Vai trò của hệ Protease:} Hệ thống cathepsin đóng vai trò chủ đạo. Sau khi chết, pH nội bào giảm dẫn đến vỡ màng lysosome, giải phóng protease \cite{agri_inst_ph}.
+
+\subsection{Sự oxy hóa (Oxidation)}
+
+Bạch tuộc chứa tỷ lệ axit béo không bão hòa đa (PUFA) cao \cite{mdpi_fatty_acid}.
+
+\textbf{Oxy hóa Lipid:} Tạo ra aldehyde và ketone, gây mùi hôi \cite{mdpi_antioxidant}. 
+
+\textbf{Biến đổi sắc tố:} Ommochrome bị oxy hóa làm da mất màu tự nhiên \cite{pubmed_ice_storage}. Polyphenol oxidase (PPO) gây đốm đen \cite{pubmed_ppo}.
+
+\subsection{Sự phát triển của vi sinh vật (Microbial growth)}
+
+Vi khuẩn \textit{Pseudomonas spp.}, \textit{Vibrio spp.} và \textit{Shewanella spp.} chiếm ưu thế trong bảo quản lạnh \cite{researchgate_sensory_scheme}.
+
+Chúng phân hủy hợp chất thành:
+\begin{itemize}
+    \item \textbf{Amoniac}: Mùi hôi thối \cite{researchgate_sensory_scheme}.
+    \item \textbf{Amin sinh học}: Cadaverine và putrescine \cite{pmc_biogenic_amines}.
+    \item \textbf{TMA}: Mùi cá ươn đặc trưng \cite{pmc_biogenic_squid}.
+\end{itemize}
+
+\section{Các phương pháp xác định và đánh giá độ tươi của bạch tuộc}
+
+\subsection{Phương pháp cảm quan và Chỉ số QIM}
+
+Chỉ số Chất lượng (QIM) cho điểm vi phạm dựa trên các thông số nhạy cảm như giác bám, độ bóng \cite{researchgate_sensory_scheme}.
+
+\subsection{Các phương pháp khách quan (Objective methods)}
+
+\begin{itemize}
+    \item \textbf{TVB-N}: Giới hạn 25–35 mg/100g \cite{researchgate_tvbn_hake}.
+    \item \textbf{TMA}: < 2 mg N/100g sản phẩm tươi \cite{researchgate_sensory_scheme}.
+    \item \textbf{K-value}: Phân hủy ATP diễn ra rất nhanh \cite{researchgate_atp}.
+    \item \textbf{Amin sinh học}: Histamine tối đa 50 ppm \cite{pmc_biogenic_amines}.
+\end{itemize}
+
+\section{Kết luận}
+
+Chất lượng bạch tuộc chịu chi phối bởi hệ protease nội tại và vi sinh vật. Cần kết hợp QIM và các chỉ số hóa học để đảm bảo an toàn.
+
+\newpage
+% --- TÀI LIỆU THAM KHẢO CHƯƠNG 2 (THỦ CÔNG - APA STYLE) ---
+\renewcommand{\bibname}{Tài liệu tham khảo Chương 2}
+\begin{thebibliography}{99}
+\addcontentsline{toc}{section}{Tài liệu tham khảo Chương 2}
+
+\bibitem{pubmed_ice_storage} Nirmal, N. P., et al. (2015). Sensory, biochemical and bacteriological properties of octopus (Cistopus indicus) stored in ice. \textit{Food Chemistry}. \url{https://pubmed.ncbi.nlm.nih.gov/26396427/}
+
+\bibitem{mdpi_fish_spoilage} Liu, X., et al. (2025). Mechanistic Insights into Fish Spoilage and Integrated Preservation Technologies. \textit{Applied Sciences}, 15(14), 7639. \url{https://www.mdpi.com/2076-3417/15/14/7639}
+
+\bibitem{researchgate_proteolytic} Hurtado, J. L., et al. (2012). Characterization of proteolytic activity in octopus (Octopus vulgaris) arm muscle. \textit{Journal of Food Science}. \url{https://www.researchgate.net/publication/229588927_Characterization_of_proteolytic_activity_in_octopus_Octopus_vulgaris_arm_muscle}
+
+\bibitem{tcvn_7265} Tiêu chuẩn Quốc gia. (2009). \textit{TCVN 7265:2009 về Quy phạm thực hành đối với thủy sản}. \url{https://caselaw.vn/van-ban-phap-luat/253532-tieu-chuan-quoc-gia-tcvn-7265-2009-cac-rcp-52-2003-rev-4-2008-ve-quy-pham-thuc-hanh-doi-voi-thuy-san-va-san-pham-thuy-san-nam-2009-van-ban-het-hieu-luc}
+
+\bibitem{researchgate_squid_freshness} Vaz-Pires, P., et al. (2008). Characterization of Common Squid Using Several Freshness Indicators. \textit{Journal of Food Science}. \url{https://www.researchgate.net/publication/230177427_Characterization_of_Common_Squid_Using_Several_Freshness_Indicators}
+
+\bibitem{agri_inst_ph} Agriculture Institute. (2023). \textit{The Impact of Acidic pH on Autolytic Enzymes in Fish Spoilage}. \url{https://agriculture.institute/quality-assurance-dfpt/acidic-ph-impact-autolytic-enzymes-fish-spoilage/}
+
+\bibitem{dialnet_patagonian} Ortiz, N., et al. (2021). Changes on quality parameters and sensory attributes of the Patagonian red octopus. \textit{Journal of Aquatic Food Product Technology}. \url{https://dialnet.unirioja.es/descarga/articulo/9396488.pdf}
+
+\bibitem{pmc_color_change} PMC. (2024). \textit{High energetic cost of color change in octopuses}. \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC11621519/}
+
+\bibitem{pmc_chemotactile} PMC. (2024). \textit{Cephalopod chemotactile sensation}. \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC11055638/}
+
+\bibitem{pmc_food_choice} PMC. (2020). \textit{Sensorial Hierarchy in Octopus vulgaris's Food Choice: Chemical vs. Visual}. \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC7143185/}
+
+\bibitem{happyfood_tips} HappyFood. (2024). \textit{Cùng Hùng Hậu chọn mua bạch tuộc tươi ngon}. \url{https://happyfood.vn/cung-hung-hau-chon-mua-bach-tuoc-tuoi-ngon-va-lam-cach-nao-de-bao-quan-dung-nhe/}
+
+\bibitem{fptshop_so_che} FPT Shop. (2024). \textit{Hướng dẫn cách sơ chế bạch tuộc đơn giản}. \url{https://fptshop.com.vn/tin-tuc/dien-may/cach-so-che-bach-tuoc-175475}
+
+\bibitem{mdpi_fatty_acid} MDPI. (2025). \textit{A Comparative Study of the Fatty Acid Profile of Common Octopus}. \url{https://www.mdpi.com/1660-3397/23/5/182}
+
+\bibitem{mdpi_antioxidant} MDPI. (2022). \textit{Antioxidant Effect of Octopus Byproducts in Canned Horse Mackerel}. \url{https://www.mdpi.com/2076-3921/11/11/2091}
+
+\bibitem{mdpi_preservative} MDPI. (2022). \textit{Preservative Effect on Canned Mackerel lipids by Addition of Octopus Cooking Liquor}. \url{https://www.mdpi.com/1420-3049/27/3/739}
+
+\bibitem{pubmed_ppo} PubMed. (2024). \textit{Molecular Characterization of Polyphenol Oxidase}. \url{https://pubmed.ncbi.nlm.nih.gov/40888300/}
+
+\bibitem{frontiers_microbiome} Frontiers. (2024). \textit{Unique skin microbiome in octopuses}. \url{https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2024.1448199/full}
+
+\bibitem{researchgate_sensory_scheme} Barbosa, A., et al. (2009). Quality Index Method (QIM): Development of a sensorial scheme for common Octopus. \textit{Food Control}. \url{https://www.researchgate.net/publication/222697531_Quality_Index_Method_QIM_Development_of_a_sensorial_scheme_for_common_Octopus_Octopus_vulgaris}
+
+\bibitem{pmc_biogenic_amines} Visciano, P., et al. (2016). Biogenic amines in seafood: a review. \textit{Frontiers in Microbiology}. \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC4921096/}
+
+\bibitem{pmc_biogenic_squid} PMC. (2011). \textit{Determination of Biogenic Amines and Endotoxin in Squid}. \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC3005391/}
+
+\bibitem{researchgate_tvbn_hake} Baixas-Nogueras, S., et al. (2013). Total volatile basic nitrogen during ice storage of European hake. \textit{Journal of Food Science}. \url{https://www.researchgate.net/publication/251575537_Total_volatile_basic_nitrogen_and_trimethylamine_nitrogen_levels_during_ice_storage_of_European_hake_Merluccius_merluccius_A_seasonal_and_size_differentiation}
+
+\bibitem{researchgate_atp} ResearchGate. (2022). \textit{The ATP degradation process and formulas for K-value}. \url{https://www.researchgate.net/figure/A-The-ATP-degradation-process-B-The-formulas-used-for-calculating-K-value_fig2_360248612}
+
+\bibitem{xrite_lab} X-Rite. (2024). \textit{LAB Color Space and Values}. \url{https://www.xrite.com/blog/lab-color-space}
+
+\end{thebibliography}
+
+\chapter{Phân Tích Chuyên Sâu Quy Trình Sơ Chế Và Kỹ Thuật Xử Lý Bạch Tuộc Trong Ẩm Thực Chuyên Nghiệp}
+
+Sơ chế thực phẩm, đặc biệt là đối với các loại thủy sản có cấu trúc sinh học phức tạp như bạch tuộc, không chỉ đơn thuần là một chuỗi các thao tác làm sạch bề mặt mà còn là một quá trình chuẩn bị chiến lược nhằm tối ưu hóa các thuộc tính vật lý và hóa học của nguyên liệu trước khi bước vào giai đoạn chế biến nhiệt cuối cùng \cite{ref1}. Trong bối cảnh ẩm thực hiện đại, nơi sự tinh tế về kết cấu (texture) và sự thanh khiết về hương vị được đặt lên hàng đầu, việc hiểu rõ bản chất của quá trình sơ chế bạch tuộc trở thành một yêu cầu bắt buộc đối với các chuyên gia. Mục đích cốt lõi của việc sơ chế loại động vật thân mềm này là chuyển đổi một thực thể sinh học thô — vốn chứa đầy chất nhầy bảo vệ, các cơ quan nội tạng dễ bị phân hủy và cấu trúc cơ bắp cực kỳ bền vững — thành một nguyên liệu sạch, an toàn và sẵn sàng cho các phản ứng nhiệt hóa học \cite{ref1}.
+
+Quá trình sơ chế đóng vai trò như một bộ lọc chất lượng, nơi các tạp chất, mùi tanh đại đương không mong muốn và các thành phần không thể tiêu hóa được loại bỏ một cách triệt để \cite{ref2}. Các hoạt động cơ bản trong giai đoạn này thường bao gồm kiểm tra cảm quan để xác định độ tươi, rửa sạch các dị vật bám trên giác bám, phân loại theo kích cỡ và khối lượng để áp dụng các kỹ thuật làm mềm khác nhau, và quan trọng nhất là các thao tác giải phẫu để làm sạch khoang thân cũng như cụm xúc tu \cite{ref1}. Sự thành công của món ăn cuối cùng phụ thuộc tới 70\% vào sự tỉ mỉ trong giai đoạn sơ chế này, bởi bất kỳ sự sai sót nào trong việc loại bỏ túi mực hoặc răng bạch tuộc cũng có thể dẫn đến sự thất bại về hương vị và thẩm mỹ của thành phẩm \cite{ref3}.
+
+\section{Phân Tích Hình Thái Học So Sánh: Bạch Tuộc Và Mực Trong Sơ Chế}
+
+Để đạt được sự tinh thông trong kỹ thuật sơ chế, người đầu bếp cần phải có một nền tảng kiến thức vững chắc về giải phẫu học so sánh giữa các loài Cephalopoda. Mặc dù bạch tuộc và mực thường bị nhầm lẫn là có quy trình xử lý giống hệt nhau, nhưng các khác biệt về mặt cấu trúc sinh học dẫn đến những thay đổi căn bản trong thao tác tay và trình tự làm sạch.
+
+\subsection{Sự Khác Biệt Về Khung Xương Và Khoang Thân}
+
+Một trong những điểm khác biệt quan trọng nhất ảnh hưởng đến quy trình sơ chế là cấu trúc nâng đỡ bên trong. Mực ống sở hữu một bộ phận cứng gọi là mai mực hoặc "bút" (quill/gladius), một cấu trúc bằng chitin kéo dài dọc theo thân, giúp duy trì hình dạng ống cho con mực \cite{ref5}. Ngược lại, bạch tuộc là loài động vật hoàn toàn không có xương và không có bất kỳ bộ phận cứng nào bên trong khoang thân \cite{ref7}. Sự thiếu vắng của mai cứng cho phép bạch tuộc có khả năng co giãn tuyệt vời, giúp chúng len lỏi qua các khe đá hẹp, nhưng đồng thời cũng làm cho khoang thân của chúng trở nên mềm mại và linh hoạt hơn nhiều so với mực \cite{ref7}.
+
+Khi sơ chế mực, người thực hiện có thể luồn tay vào khoang thân hình ống để rút phần mai mực ra một cách dễ dàng \cite{ref10}. Tuy nhiên, với bạch tuộc, vì không có "bút" để tạo khung, khoang thân (hood/mantle) thực chất là một túi cơ bắp bao bọc chặt chẽ các cơ quan nội tạng \cite{ref7}. Điều này có nghĩa là thay vì chỉ cần rút một bộ phận cứng, người sơ chế phải tập trung vào việc móc bỏ phần ruột và nội tạng (innards) còn sót lại bám dính vào màng bên trong của túi thân \cite{ref1}.
+
+\subsection{Phản Ứng Của Nội Tạng Khi Tách Rời}
+
+Quy trình tách rời các bộ phận chính ở bạch tuộc đòi hỏi sự khéo léo khác biệt hoàn toàn so với mực. Ở mực ống, một thao tác kéo dứt khoát phần râu và đầu thường sẽ kéo theo toàn bộ túi mực và nội tạng ra khỏi thân ống do sự liên kết lỏng lẻo của chúng \cite{ref1}. Tuy nhiên, ở bạch tuộc, phần nội tạng không "trôi" theo cụm đầu một cách dễ dàng như vậy \cite{ref1}. Nội tạng của bạch tuộc được cố định chắc chắn hơn bên trong khoang đầu rỗng \cite{ref12}.
+
+Do đó, kỹ thuật chuẩn để tách rời thường bắt đầu bằng việc xác định vị trí giao nhau giữa phần đầu và xúc tu, ngay phía dưới mắt \cite{ref1}. Thay vì chỉ kéo, người sơ chế thường phải dùng dao sắc hoặc kéo cắt một đường ngang để tách biệt hai phần này, sau đó mới tiến hành xử lý sâu vào bên trong khoang thân rỗng \cite{ref4}.
+
+\begin{table}[H]
+\centering
+\caption{So sánh đặc điểm hình thái phục vụ sơ chế giữa Mực và Bạch tuộc}
+\begin{tabular}{p{3.5cm} p{5.5cm} p{5.5cm}}
+\toprule
+\textbf{Đặc điểm} & \textbf{Mực ống (Squid)} & \textbf{Bạch tuộc (Octopus)} \\
+\midrule
+Cấu trúc nâng đỡ & Có mai mực (quill) cứng, dài \cite{ref5} & Không có bộ phận cứng trong thân \cite{ref7} \\
+Hình dạng thân & Hình ống, giữ dáng tốt \cite{ref5} & Hình túi/mái vòm, mềm mại \cite{ref7} \\
+Liên kết nội tạng & Lỏng lẻo, dễ rút ra cùng đầu \cite{ref1} & Chặt chẽ, bám vào màng trong \cite{ref12} \\
+Bộ phận cứng & Mai mực và răng \cite{ref7} & Chỉ có răng (beak) \cite{ref7} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Quy Trình Làm Sạch Hệ Thống: Kỹ Thuật Giải Phẫu Và Vệ Sinh}
+
+Việc làm sạch bạch tuộc là một quá trình đa giai đoạn, đòi hỏi sự kết hợp giữa kỹ thuật cắt thái chính xác và các thao tác cơ học để đảm bảo nguyên liệu đạt tới độ tinh khiết tối đa.
+
+\subsection{Kỹ Thuật Xử Lý Khoang Thân (The Hood/Mantle)}
+
+Khoang thân bạch tuộc, hay còn gọi là túi đầu, chứa hầu hết các cơ quan quan trọng như tim, mang, dạ dày và túi mực \cite{ref13}. Để làm sạch khoang này một cách hiệu quả nhất, các chuyên gia thường áp dụng kỹ thuật "lộn ngược" (turn the hood inside out).
+
+Thao tác này bắt đầu bằng việc dùng dao nhỏ hoặc kéo khía nhẹ vào phần màng mỏng ngay vị trí phía dưới đầu, nơi kết nối giữa thân và xúc tu \cite{ref2}. Qua khe hở này, người sơ chế dùng ngón tay đẩy từ đáy túi thân, lộn toàn bộ mặt trong ra ngoài giống như cách lộn một chiếc bít tất \cite{ref2}. Khi mặt trong đã lộ ra, toàn bộ khối nội tạng sẽ hiển hiện rõ ràng, cho phép người sơ chế dễ dàng dùng tay hoặc mũi dao để bóc tách và lôi ra ngoài mà không làm vỡ túi mực \cite{ref1}. Việc lộn ngược không chỉ giúp loại bỏ nội tạng sạch hơn mà còn cho phép rửa trôi các chất bẩn, bùn cát bám trong các nếp gấp của khoang thân \cite{ref12}. Sau khi làm sạch, túi thân được lộn trở lại hình dạng ban đầu để chuẩn bị cho các bước tiếp theo \cite{ref17}.
+
+\subsection{Xử Lý Cụm Đầu Và Các Cơ Quan Cảm Giác}
+
+Phần cụm xúc tu sau khi tách rời vẫn còn chứa những bộ phận cần phải loại bỏ vì lý do vệ sinh và kết cấu món ăn, bao gồm mắt và răng.
+
+\textbf{Loại bỏ mắt:} Mắt bạch tuộc chứa dịch đen và có kết cấu dai, không phù hợp cho việc chế biến cao cấp. Người sơ chế dùng mũi kéo hoặc dao sắc khéo léo cắt bỏ hai mắt \cite{ref3}. Thao tác này cần thực hiện hết sức cẩn thận để tránh làm vỡ mắt, khiến nước đen bắn ra làm bẩn phần thịt trắng \cite{ref3}. Trong một số phong cách ẩm thực bình dân, mắt có thể được giữ lại để chiên giòn, nhưng đối với các tiêu chuẩn chuyên nghiệp, chúng thường bị vứt bỏ \cite{ref20}.
+
+\textbf{Loại bỏ răng (beak):} Răng bạch tuộc, hay còn gọi là miệng, là một khối chitin cứng nằm ở tâm điểm nơi các xúc tu hội tụ \cite{ref7}. Hình dáng của nó giống như một chiếc mỏ vẹt màu đen và rất cứng \cite{ref7}. Để lấy răng mà vẫn giữ nguyên cụm xúc tu, người sơ chế lật ngược cụm chân cho phần giác bám hướng lên trên, dùng hai ngón tay cái bóp nhẹ hoặc nhấn vào phần thịt xung quanh để đẩy khối răng bật lên trên, sau đó dùng dao hoặc kéo cắt bỏ \cite{ref1}. Việc lấy sạch răng là bước quan trọng để tránh gây khó chịu cho thực khách khi thưởng thức \cite{ref20}.
+
+\textbf{Vệ sinh xúc tu và giác bám:} Xúc tu bạch tuộc có hàng trăm giác bám, vốn là nơi tích tụ cát và các vi sinh vật biển. Cần phải xả nước lạnh liên tục và dùng tay vuốt dọc theo từng xúc tu để đảm bảo không còn dị vật bám lại \cite{ref13}.
+
+\subsection{Quản Lý Lớp Màng Da (Membrane/Skin)}
+
+Bạch tuộc sở hữu một lớp màng da bên ngoài chứa nhiều sắc tố (chromatophores), cho phép chúng thay đổi màu sắc để ngụy trang \cite{ref7}. Trong sơ chế, việc có nên lột bỏ lớp da này hay không phụ thuộc vào phương pháp chế biến. Lớp da bạch tuộc khi nấu chín theo phong cách hầm hoặc luộc chậm sẽ tạo ra một lớp màng gelatin mềm mại và béo ngậy, được coi là phần ngon nhất của món ăn trong ẩm thực Địa Trung Hải \cite{ref25}.
+
+Tuy nhiên, đối với các món yêu cầu độ thẩm mỹ trắng tinh khiết hoặc khi sử dụng bạch tuộc lớn có lớp da quá dai, việc lột da là cần thiết. Để lột da, người sơ chế có thể dùng dao khứa một đường nhỏ trên lưng thân để tạo điểm gờ, sau đó dùng tay kéo mạnh lớp màng ra khỏi phần thịt trắng \cite{ref1}. Một mẹo chuyên nghiệp là chần sơ bạch tuộc qua nước sôi (blanching) rồi ngâm ngay vào nước đá; sự sốc nhiệt sẽ làm lớp da lỏng lẻo và dễ dàng bong ra chỉ bằng cách chà xát nhẹ \cite{ref18}.
+
+\section{Phân Tích Hóa Học Và Cơ Học Trong Việc Khử Mùi Và Nhớt}
+
+Sau giai đoạn giải phẫu, bề mặt bạch tuộc vẫn bao phủ bởi một lớp chất nhầy dày đặc. Lớp nhầy này không chỉ gây trơn trượt khó cắt thái mà còn là nguồn gốc của mùi tanh đặc trưng \cite{ref3}.
+
+\subsection{Cơ Chế Tác Động Của Muối Và Axit}
+
+Phương pháp phổ biến nhất trong các bếp gia đình và nhà hàng truyền thống là bóp bạch tuộc với muối và nước cốt chanh hoặc giấm \cite{ref1}. Muối hạt đóng vai trò là một chất mài mòn cơ học, giúp phá vỡ các liên kết glycoprotein trong chất nhầy \cite{ref27}. Trong khi đó, axit từ chanh hoặc giấm giúp trung hòa các hợp chất bazơ gây mùi tanh như trimethylamine \cite{ref14}.
+
+Quá trình này yêu cầu người sơ chế phải nhồi bóp liên tục trong khoảng 5-7 phút cho đến khi cảm nhận được độ săn chắc của thịt và lớp bọt nhớt được thải ra hoàn toàn \cite{ref3}. Việc kết hợp thêm gừng đập dập hoặc rượu trắng giúp loại bỏ các hợp chất hữu cơ gây mùi khó chịu \cite{ref2}.
+
+\subsection{Kỹ Thuật Sử Dụng Đường Cát: Một Cách Tiếp Cận Hiện Đại}
+
+Một kỹ thuật tiên tiến được giới đầu bếp chuyên nghiệp (đặc biệt trong ẩm thực Á Đông) ưa chuộng là sử dụng đường cát trắng để làm sạch nhớt thay vì muối \cite{ref3}. Ưu điểm vượt trội của đường nằm ở chỗ nó không rút nước ra khỏi mô thịt nhanh như muối (hiện tượng thẩm thấu), giúp bạch tuộc giữ được độ căng mọng và giòn sần sật sau khi nấu \cite{ref3}.
+
+\begin{table}[H]
+\centering
+\caption{So sánh các phương pháp khử mùi và nhớt ở bạch tuộc}
+\begin{tabular}{p{3.5cm} p{5.5cm} p{6cm}}
+\toprule
+\textbf{Phương pháp} & \textbf{Tác nhân chính} & \textbf{Đặc điểm nổi bật} \\
+\midrule
+Truyền thống & Muối + Chanh/Giấm & Khử mùi tanh mạnh, sát khuẩn tốt \cite{ref2}. Có thể làm thịt bị mặn \cite{ref27}. \\
+Hiện đại & Đường cát trắng & Giữ độ giòn tuyệt đối, không làm mất nước mô \cite{ref3}. \\
+Khử mùi sâu & Gừng + Rượu trắng & Loại bỏ triệt để mùi đại dương nặng \cite{ref4}. \\
+Dân gian & Lá ổi vò nát & Tạo mùi thơm tự nhiên, khử nhớt tốt \cite{ref2}. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Kỹ Thuật Làm Mềm Thịt (Tenderizing): Từ Truyền Thống Đến Khoa Học}
+
+Bạch tuộc nổi tiếng với kết cấu thịt có thể trở nên dai như cao su nếu không được xử lý đúng cách. Do các sợi collagen và elastin trong cơ bắp bạch tuộc rất bền vững, giai đoạn sơ chế phải bao gồm các bước làm mềm thịt (tenderizing) mang tính chiến lược \cite{ref18}.
+
+\begin{itemize}
+    \item \textbf{Tác động vật lý (Mechanical Pounding):} Dùng búa giã thịt hoặc cán dao gõ nhẹ lên các xúc tu để phá vỡ cấu trúc sợi liên kết cơ học \cite{ref17}. Ở một số vùng biển, ngư dân có truyền thống đập bạch tuộc mạnh vào các phiến đá hàng chục lần \cite{ref13}.
+    \item \textbf{Đông lạnh (The Freezing Secret):} Việc cấp đông bạch tuộc ở nhiệt độ $-18^\circ C$ hoặc thấp hơn là một phương pháp làm mềm khoa học. Các tinh thể đá hình thành sẽ đâm xuyên và làm đứt các sợi cơ \cite{ref4}.
+    \item \textbf{Kỹ thuật chần nhiệt (Thermal Shock):} Thao tác nhúng bạch tuộc vào nước sôi 3 lần (mỗi lần vài giây) giúp các xúc tu cuộn tròn đẹp mắt và bắt đầu phân hủy collagen có kiểm soát \cite{ref13}.
+    \item \textbf{Sử dụng Enzyme và chất xúc tác:} Một số bếp trưởng thả các lát bần (cork) vào nồi luộc, tin rằng tanin sẽ giúp làm mềm thịt \cite{ref25}.
+\end{itemize}
+
+\section{Nghệ Thuật Cắt Thái Và Tạo Hình (Cuts \& Forms)}
+
+Sau khi đã hoàn thiện các bước làm sạch và làm mềm, việc tạo hình bạch tuộc là công đoạn cuối cùng để định hình phong cách cho món ăn.
+
+\subsection{Ứng Dụng Tạo Hình Cho Phần Thân (Hood)}
+
+\textbf{Cắt khoanh tròn (Rings):} Giống như mực (calamari), phần đầu bạch tuộc có thể được thái thành các vòng tròn có độ dày từ $1.5cm$ đến $2cm$ \cite{ref18}. Các khoanh này rất phù hợp để tẩm bột chiên giòn. Thịt đầu bạch tuộc sau khi nấu chín thường có độ mềm và béo hơn mực \cite{ref31}.
+
+\textbf{Để nguyên con (Whole/Stuffed):} Túi đầu thường được giữ nguyên vẹn để làm món bạch tuộc nhồi \cite{ref2}. Người đầu bếp có thể nhồi hỗn hợp thịt băm, nấm hoặc gạo, sau đó hầm hoặc nướng.
+
+\textbf{Thái chỉ hoặc thái sợi (Julienne):} Phần đầu có thể được rạch đôi, trải phẳng và thái thành những sợi mỏng để trộn gỏi \cite{ref21}.
+
+\subsection{Kỹ Thuật Xử Lý Xúc Tu (Tentacles)}
+
+Xúc tu là phần đặc trưng nhất, mang lại giá trị cao nhất cho các món từ bạch tuộc nhờ kết cấu giòn sần sật của các giác bám.
+
+\begin{itemize}
+    \item \textbf{Để nguyên sợi:} Phù hợp cho các món nướng hoặc áp chảo \cite{ref25}. Các xúc tu tẩm ướp tỏi, thảo mộc rồi nướng trực tiếp trên than hồng.
+    \item \textbf{Cắt hạt lựu (Dice):} Hình thức cắt không thể thiếu cho món Takoyaki \cite{ref36}. Xúc tu được cắt khối vuông độ $1.5cm$ \cite{ref36}.
+    \item \textbf{Bàm nhỏ (Minced):} Các phần đầu nhọn của xúc tu thường được băm nhỏ để trộn làm chả hải sản \cite{ref21}.
+    \item \textbf{Khía hình quả trám (Honeycombing):} Để rút ngắn thời gian nấu và giúp gia vị thấm sâu, đầu bếp thường khía các đường chéo đan xen trên bề mặt xúc tu \cite{ref17}.
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{Các kiểu cắt thái bạch tuộc phổ biến trong ẩm thực chuyên nghiệp}
+\begin{tabular}{p{3.5cm} p{5.5cm} p{6cm}}
+\toprule
+\textbf{Hình thức} & \textbf{Ứng dụng tiêu biểu} & \textbf{Yêu cầu kỹ thuật} \\
+\midrule
+Khoanh tròn & Fried Octopus, Calamari-style & Cắt ngang túi đầu rỗng \cite{ref30} \\
+Hạt lựu & Takoyaki, Salad hải sản & Kích thước đồng đều $1.5cm$ \cite{ref36} \\
+Nguyên sợi & Grilled Octopus (Địa Trung Hải) & Giữ nguyên chiều dài, cắt rời từ gốc \cite{ref25} \\
+Thái sợi & Gỏi bạch tuộc sốt Thái & Thái mỏng dọc thớ thịt đầu \cite{ref21} \\
+Khía quả trám & Bạch tuộc nướng sa tế & Khía sâu 1/3 độ dày thịt \cite{ref17} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Quản Lý Rã Đông Và Bảo Quản Nguyên Liệu Đã Sơ Chế}
+
+\subsection{Quy Tắc Rã Đông An Toàn}
+
+Đối với bạch tuộc đông lạnh, phương pháp tối ưu nhất là rã đông chậm trong ngăn mát tủ lạnh ($2^\circ C - 4^\circ C$) trong 24 giờ \cite{ref4}. Quá trình rã đông chậm giúp duy trì độ mọng nước và đàn hồi \cite{ref4}. Trong trường hợp cần rã đông nhanh, có thể ngâm túi bạch tuộc hút chân không trong nước lạnh pha muối và giấm \cite{ref10}. Tuyệt đối tránh rã đông bằng nước lạnh hoặc lò vi sóng vì sẽ làm hỏng kết cấu thịt \cite{ref4}.
+
+\subsection{Bảo Quản Sau Sơ Chế}
+
+Bạch tuộc sau sơ chế nên sử dụng ngay. Nếu cần lưu trữ, phải thấm thật khô bằng khăn giấy chuyên dụng \cite{ref3}. Độ ẩm dư thừa là môi trường lý tưởng cho vi khuẩn và ngăn cản phản ứng Maillard khi nướng \cite{ref25}.
+
+\section{Kết Luận}
+
+Quy trình sơ chế bạch tuộc là sự giao thoa giữa kỹ năng thủ công tỉ mỉ và hiểu biết sinh học biển. Từ việc nhận diện sự khác biệt giải phẫu so với mực cho đến việc áp dụng các kỹ thuật làm mềm thịt mang tính khoa học, mỗi thao tác đều đóng vai trò quyết định đến chất lượng món ăn cuối cùng \cite{ref1}. Sự thành công của người đầu bếp không chỉ nằm ở khả năng chế biến nhiệt mà còn bắt đầu từ sự tinh tế trong giai đoạn làm sạch và chuẩn bị nguyên liệu \cite{ref3, ref4}.
+
+\newpage
+% --- TÀI LIỆU THAM KHẢO CHƯƠNG 3 (APA STYLE) ---
+\renewcommand{\bibname}{Tài liệu tham khảo Chương 3}
+\begin{thebibliography}{99}
+\addcontentsline{toc}{section}{Tài liệu tham khảo Chương 3}
+
+\bibitem{ref1} Hội Đầu Bếp Á Âu. (2026). \textit{Hướng Dẫn Sơ Chế Mực, Bạch Tuộc Và Một Số Lưu Ý Khi Ăn ?}. \url{https://www.hoidaubepaau.com/so-che-muc-bach-tuoc/}
+
+\bibitem{ref2} VinID. (2026). \textit{Cách làm bạch tuộc sạch nhanh, đơn giản mà chị em nội trợ nào cũng cần}. \url{https://vinid.net/blog/bi-quyet-nau-an/cach-lam-bach-tuoc/}
+
+\bibitem{ref3} Điện Máy Xanh. (2026). \textit{Bí quyết cách làm sạch bạch tuộc giòn ngon, hết nhớt và không tanh}. \url{https://www.dienmayxanh.com/vao-bep/bi-quyet-cach-lam-sach-bach-tuoc-gion-ngon-het-nhot-va-khong-24228}
+
+\bibitem{ref4} FPT Shop. (2026). \textit{Hướng dẫn cách sơ chế bạch tuộc đơn giản, giữ nguyên độ tươi ngon}. \url{https://fptshop.com.vn/tin-tuc/dien-may/cach-so-che-bach-tuoc-175475}
+
+\bibitem{ref5} Te Papa. (2026). \textit{The difference between colossal squid, giant squid, and octopus}. \url{https://www.tepapa.govt.nz/discover-collections/read-watch-play/colossal-squid/difference-between-colossal-squid-giant-squid}
+
+\bibitem{ref6} OLM. (2026). \textit{Dựa vào đặc điểm nào để phân biệt mực và bạch tuộc}. \url{https://olm.vn/cau-hoi/dua-vao-dac-diem-nao-de-phan-biet-muc-va-bach-tuoc.3484273657183}
+
+\bibitem{ref7} Điện Máy Xanh. (2026). \textit{Đặc điểm của mực khác với bạch tuộc là gì?}. \url{https://www.dienmayxanh.com/vao-bep/dac-diem-cua-muc-khac-voi-bach-tuoc-la-gi-18265}
+
+\bibitem{ref8} Tuyensinh247. (2026). \textit{Mực khác bạch tuộc ở đặc điểm nào dưới đây?}. \url{https://tuyensinh247.com/bai-tap-526156.html}
+
+\bibitem{ref9} Underwater360. (2026). \textit{6 Incredible Differences Between Octopuses and Squid}. \url{https://www.uw360.asia/incredible-differences-between-octopuses-squid/}
+
+\bibitem{ref10} Đặc Sản Bá Kiến. (2026). \textit{Cách sơ chế mực ống không còn mùi tanh và giòn thịt}. \url{https://dacsanbakien.com/cach-so-che-muc-ong/}
+
+\bibitem{ref11} VTC News. (2026). \textit{Cách làm sạch mực ống và bạch tuộc, không bị tanh}. \url{https://vtcnews.vn/cach-lam-sach-muc-ong-va-bach-tuoc-khong-bi-tanh-ar768198.html}
+
+\bibitem{ref12} Kopiaste. (2007). \textit{Octopus: How to clean and Cook it}. \url{https://www.kopiaste.org/2007/11/how-to-clean-an-octopus/}
+
+\bibitem{ref13} My Kitchen in Spain. (2016). \textit{YET MORE TENTACLE ADVENTURES—OCTOPUS}. \url{http://mykitcheninspain.blogspot.com/2016/02/yet-more-tentacle-adventuresoctopus.html}
+
+\bibitem{ref14} Cá Mú Đỏ. (2026). \textit{Cách sơ chế bạch tuộc không bị tanh đơn giản tại nhà}. \url{https://camudo.com/blogs/mon-ngon-moi-ngay/cach-so-che-bach-tuoc}
+
+\bibitem{ref15} OlverIndulgence. (2025). \textit{How to Break Down Whole Octopus}. \url{https://olverindulgence.com/2025/03/05/how-to-break-down-whole-octopus/}
+
+\bibitem{ref16} Monterey Bay Aquarium. (2026). \textit{Cephalopods | Animals}. \url{https://www.montereybayaquarium.org/animals/animals-a-to-z/cephalopods}
+
+\bibitem{ref17} Dân Việt. (2026). \textit{Cách sơ chế mực ống và bạch tuộc nhanh, đơn giản}. \url{https://danviet.vn/cach-so-che-muc-ong-va-bach-tuoc-nhanh-don-gian-7777707139-d463672.html}
+
+\bibitem{ref18} Fishfiles. (2026). \textit{How to prepare squid, cuttlefish and octopus (cephalopods)}. \url{https://www.fishfiles.com.au/preparing-seafood/how-to-guides/how-to-prepare-squid-cuttlefish-and-octopus}
+
+\bibitem{ref19} Nghia Mien Tay T257. (2026). \textit{How to Make Octopus Quickly, Simply, Without the Fishy Smell}. [Video]. \url{https://www.youtube.com/watch?v=63pUun8ZlS4}
+
+\bibitem{ref20} wikiHow. (2026). \textit{How to Clean Octopus: 10 Steps (with Pictures)}. \url{https://www.wikihow.com/Clean-Octopus}
+
+\bibitem{ref21} Đảo Hải Sản. (2026). \textit{Cách làm bạch tuộc sốt thái chua cay bắt mồi ngon tê tái}. \url{https://daohaisan.vn/blogs/mon-ngon/cach-lam-bach-tuoc-sot-thai}
+
+\bibitem{ref22} HappyFood. (2026). \textit{Cùng Hùng Hậu học ngay cách sơ chế bạch tuộc sạch}. \url{https://happyfood.vn/cung-hung-hau-hoc-ngay-cach-so-che-bach-tuoc-sach-khong-de-lai-mui-tanh-nhe/}
+
+\bibitem{ref23} Dh Foods. (2026). \textit{Bỏ túi cách sơ chế bạch tuộc sống không tanh, sạch sẽ}. \url{https://www.dhfoods.com.vn/vi/meo-vat/bo-tui-cach-so-che-bach-tuoc-song-khong-tanh-sach-se-nhanh-chong-ngay-tai-nha}
+
+\bibitem{ref24} Seafood Boss. (2026). \textit{How To Clean And Prepare Octopus For Cooking}. \url{https://seafoodboss.com.au/blogs/news/how-to-clean-and-prepare-octopus-for-cooking}
+
+\bibitem{ref25} Jess Pryles. (2026). \textit{Grilled Octopus with lemon \& oregano}. \url{https://jesspryles.com/grilled-octopus-with-lemon-oregano/}
+
+\bibitem{ref26} GialloZafferano. (2026). \textit{How to Clean and Cook Octopus}. \url{https://www.giallozafferano.com/recipes/How-to-Clean-and-Cook-Octopus.html}
+
+\bibitem{ref27} Hawaiian Bath \& Body. (2026). \textit{Salt Scrub vs Sugar Scrub: Which Exfoliant is Best for Your Skin?}. \url{https://hawaiianbathbody.com/blogs/news/salt-scrub-vs-sugar-scrub-which-exfoliant-is-best-for-your-skin}
+
+\bibitem{ref28} SEACRET. (2026). \textit{Salt vs Sugar Scrub: Which Is Better for Your Skin?}. \url{https://www.seacret.com/seacret_default/blog/salt-vs-sugar-scrub}
+
+\bibitem{ref29} Dh Foods. (2026). \textit{Bỏ túi cách sơ chế bạch tuộc sống không tanh}. \url{http://dhfoods.com.vn/vi/meo-vat/bo-tui-cach-so-che-bach-tuoc-song-khong-tanh-sach-se-nhanh-chong-ngay-tai-nha}
+
+\bibitem{ref30} Reddit. (2014). \textit{I have a frozen octopus.... Any suggestions?}. \url{https://www.reddit.com/r/Cooking/comments/2j8oq7/i_have_frozen_octopus_any_suggestions_i_have_no/}
+
+\bibitem{ref31} Italian Food Forever. (2019). \textit{Fried Octopus}. \url{https://italianfoodforever.com/2019/12/fried-octopus/}
+
+\bibitem{ref32} Riris Greek Eats. (2026). \textit{What's The Difference Between Octopus and Calamari?}. \url{https://ririsgreekeats.com/calamari-vs-octopus/}
+
+\bibitem{ref33} Korkmaz. (2026). \textit{Các kiểu cắt, thái không phải ai cũng biết}. \url{https://korkmaz.vn/blogs/tu-van-su-dung/cac-kieu-cat-thai-khong-phai-ai-cung-biet}
+
+\bibitem{ref34} VnExpress Cooking. (2026). \textit{Các kiểu cắt, thái không phải ai cũng biết}. \url{https://vnexpress.net/doi-song-cooking-cac-kieu-cat-thai-khong-phai-ai-cung-biet-4721468.html}
+
+\bibitem{ref35} Reddit. (2019). \textit{I have "already cooked" octopus tentacles. How can i prepare them?}. \url{https://www.reddit.com/r/Cooking/comments/b38xng/i_have_already_cooked_octopus_tentacles_how_can_i/}
+
+\bibitem{ref36} RecipeTin Japan. (2026). \textit{Takoyaki Recipe (Octopus Balls)}. \url{https://japan.recipetineats.com/takoyaki-recipe-octopus-balls/}
+
+\bibitem{ref37} Chef H. Delgado. (2026). \textit{Takoyaki, delicious Japanese Octopus Fritters}. \url{https://chefhdelgado.com/post/takoyaki-is-one-of-my-favourite-japanese-street-fo}
+
+\bibitem{ref38} YouTube. (2026). \textit{How to clean an Octopus}. [Video]. \url{https://www.youtube.com/watch?v=TPCj7alVBk0}
+
+\bibitem{ref39} Jamie Oliver. (2026). \textit{How To - prepare an octopus, from 'Jamie Does...'}. [Video]. \url{https://www.youtube.com/watch?v=RXdswwXjjr4}
+
+\end{thebibliography}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+

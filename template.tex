@@ -1,0 +1,163 @@
+\documentclass[12pt,a4paper]{article}
+
+% --- Cấu hình Tiếng Việt cho pdfLaTeX ---
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{times} 
+
+% --- THIẾT LẬP LỀ TRANG (Top 2.5, Bottom 2.0, Left 2.5, Right 2.0) ---
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2cm, left=2.5cm, right=2cm}
+
+% --- THIẾT LẬP CỠ CHỮ CƠ BẢN 13PT ---
+\usepackage[fontsize=13pt]{scrextend}
+
+\usepackage[x11names,dvipsnames,svgnames,table]{xcolor} 
+\usepackage{graphicx}
+\usepackage[space]{grffile} 
+\usepackage{float} 
+\usepackage{amsmath} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs} 
+\usepackage{longtable} 
+\usepackage{array}
+
+% --- CẤU HÌNH HEADERS ---
+\usepackage{titlesec}
+% Header 1 (Section): Cỡ 15pt, căn giữa, in đậm
+\titleformat{\section}
+  {\centering\bfseries\fontsize{15pt}{18pt}\selectfont}
+  {}
+  {0pt}
+  {}
+% Header 2 & 3: Cỡ 13pt, in đậm
+\titleformat{\subsection}
+  {\bfseries\fontsize{13pt}{15.6pt}\selectfont}
+  {}
+  {0pt}
+  {}
+\titleformat{\subsubsection}
+  {\bfseries\fontsize{13pt}{15.6pt}\selectfont}
+  {}
+  {0pt}
+  {}
+
+% --- KHOẢNG CÁCH TIÊU ĐỀ (Before 12pt) ---
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+\titlespacing*{\subsubsection}{0pt}{12pt}{6pt}
+
+% --- THỤT ĐẦU DÒNG 0.5CM VÀ KHOẢNG CÁCHĐOẠN VĂN (Before 12pt) ---
+\usepackage{indentfirst} % Thụt đầu dòng kể cả đoạn đầu tiên
+\setlength{\parindent}{0.5cm}
+\setlength{\parskip}{12pt}
+
+% --- CẤU HÌNH CAPTION (Cỡ 11pt, in nghiêng) ---
+\usepackage{caption}
+\DeclareCaptionFont{size11}{\fontsize{11pt}{13.2pt}\selectfont}
+\captionsetup{font={it, size11}}
+
+% --- SỬA LỖI MÀU VÀ HỘP ---
+% --- CẤU HÌNH HỘP QUY TRÌNH ---
+\usepackage[most]{tcolorbox}
+\newtcolorbox{mybox}{colback=black!5, colframe=black!30, arc=0mm, boxrule=0.5pt, left=2pt, right=2pt, top=2pt, bottom=2pt}
+
+% --- TRANG BÌA ---
+\usepackage{tikz}
+\usepackage{setspace}
+
+% --- CẤU HÌNH HEADER VÀ FOOTER ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\fontsize{8pt}{9.6pt}\selectfont Hồ Quốc Thắng 23129398}
+\fancyfoot[C]{\fontsize{8pt}{9.6pt}\selectfont Bảo quản \& chế biến thuỷ sản | Aquatic Products Preservation and Processing Technologies | Nguyễn Anh Trinh}
+\fancyfoot[R]{\fontsize{8pt}{9.6pt}\selectfont \thepage} % Thêm số trang
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\graphicspath{{E:/study/KNVSTP/}}
+
+\begin{document}
+
+% --- TRANG BÌA ---
+\pagenumbering{gobble}
+\pagestyle{empty}
+\begin{titlepage}
+\begin{tikzpicture}[remember picture, overlay]
+  % Khung ngoài
+  \draw[line width=2.5pt]
+    ([xshift=1.2cm, yshift=-1.2cm]current page.north west)
+    rectangle
+    ([xshift=-1.2cm, yshift=1.2cm]current page.south east);
+  % Khung trong
+  \draw[line width=0.8pt]
+    ([xshift=1.45cm, yshift=-1.45cm]current page.north west)
+    rectangle
+    ([xshift=-1.45cm, yshift=1.45cm]current page.south east);
+\end{tikzpicture}
+
+\begin{center}
+
+\vspace*{0.4cm}
+{\fontsize{13pt}{16pt}\selectfont\textbf{BỘ GIÁO DỤC VÀ ĐÀO TẠO}}\\
+{\fontsize{13pt}{16pt}\selectfont\textbf{TRƯỜNG ĐẠI HỌC NÔNG LÂM TP.HCM}}\\
+{\fontsize{13pt}{16pt}\selectfont\textbf{KHOA CÔNG NGHỆ HÓA HỌC VÀ THỰC PHẨM}}
+
+\vspace{0.6cm}
+
+\includegraphics[width=4.5cm]{0.jpg}
+
+\vspace{0.8cm}
+
+{\fontsize{18pt}{22pt}\selectfont\textbf{BÀI TẬP VỀ NHÀ}}
+
+\vspace{0.4cm}
+
+{\fontsize{16pt}{20pt}\selectfont\textbf{BẢO QUẢN \& CHẾ BIẾN THỦY SẢN}}
+
+\vspace{1.6cm}
+
+\end{center}
+
+\noindent
+{\fontsize{13pt}{16pt}\selectfont\textbf{GVGD:} Nguyễn Anh Trinh}\\
+{\fontsize{13pt}{16pt}\selectfont\textbf{}}
+
+\vspace{0.8cm}
+
+\begin{center}
+{\fontsize{13pt}{16pt}\selectfont\textbf{Sinh viên thực hiện}}\\[6pt]
+\begin{tabular}{@{\hspace{0.5cm}} p{6cm} @{\hspace{1.5cm}} p{3cm} @{\hspace{0.5cm}}}
+\toprule
+\textbf{Họ và tên} & \textbf{MSSV} \\
+\midrule
+Hồ Quốc Thắng     & 23129398 \\[3pt]
+
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vfill
+
+\begin{center}
+{\fontsize{13pt}{16pt}\selectfont\textbf{Thành phố Hồ Chí Minh, tháng 3/2026}}
+\end{center}
+
+
+\end{titlepage}
+
+% --- TRANG MỤC LỤC ---
+\renewcommand{\contentsname}{MỤC LỤC}
+\tableofcontents
+\newpage
+
+% --- NỘI DUNG CHÍNH ---
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\pagestyle{fancy}
+
+
+\end{document}
+

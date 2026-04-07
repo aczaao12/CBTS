@@ -1,0 +1,222 @@
+\documentclass[12pt,a4paper]{report}
+
+% --- Cấu hình Tiếng Việt cho pdfLaTeX ---
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+\usepackage{times} 
+
+% --- THIẾT LẬP LỀ TRANG ---
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2cm, left=2.5cm, right=2cm}
+
+% --- THIẾT LẬP CỠ CHỮ CƠ BẢN 13PT ---
+\usepackage[fontsize=13pt]{scrextend}
+
+\usepackage[x11names,dvipsnames,svgnames,table]{xcolor} 
+\usepackage{graphicx}
+\usepackage[space]{grffile} 
+\usepackage{float} 
+\usepackage{amsmath} 
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs} 
+\usepackage{longtable} 
+\usepackage{array}
+
+% --- Cấu hình Trích dẫn (TRUYỀN THỐNG) ---
+% Sử dụng \cite cho trích dẫn số [1, 2...] đồng bộ với Chương 1
+\usepackage{cite}
+
+% --- CẤU HÌNH HEADERS ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\centering\bfseries\fontsize{18pt}{22pt}\selectfont}
+  {\chaptertitlename\ \thechapter}
+  {10pt}
+  {\fontsize{16pt}{20pt}\selectfont}
+
+\titleformat{\section}
+  {\bfseries\fontsize{14pt}{16.8pt}\selectfont}
+  {\thesection}
+  {1em}
+  {}
+
+\titleformat{\subsection}
+  {\bfseries\fontsize{13pt}{15.6pt}\selectfont}
+  {\thesubsection}
+  {1em}
+  {}
+
+% --- KHOẢNG CÁCH TIÊU ĐỀ ---
+\titlespacing*{\chapter}{0pt}{-20pt}{20pt}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+
+% --- THỤT ĐẦU DÒNG VÀ KHOẢNG CÁCH ĐOẠN ---
+\usepackage{indentfirst}
+\setlength{\parindent}{0.5cm}
+\setlength{\parskip}{12pt} 
+
+% --- CẤU HÌNH CAPTION ---
+\usepackage{caption}
+\DeclareCaptionFont{size11}{\fontsize{11pt}{13.2pt}\selectfont}
+\captionsetup{font={it, size11}}
+
+% --- TRANG BÌA ---
+\usepackage{tikz}
+\usepackage{setspace}
+
+% --- CẤU HÌNH HEADER VÀ FOOTER ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\fontsize{8pt}{9.6pt}\selectfont Hồ Quốc Thắng 23129398}
+\fancyfoot[C]{\fontsize{8pt}{9.6pt}\selectfont Bảo quản \& chế biến thuỷ sản | Aquatic Products Preservation and Processing Technologies | Nguyễn Anh Trinh}
+\fancyfoot[R]{\fontsize{8pt}{9.6pt}\selectfont \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+\pagenumbering{arabic}
+\setcounter{page}{1} 
+
+\chapter{Đánh giá chất lượng, sự biến đổi và phương pháp xác định độ tươi của Bạch tuộc (Octopus) sau thu hoạch}
+
+Sự hiểu biết sâu sắc về các đặc tính sinh học, hóa học và vật lý của bạch tuộc (\textit{Octopus}) là nền tảng cốt yếu để duy trì giá trị kinh tế và an toàn thực phẩm trong ngành công nghiệp thủy sản. Động vật chân đầu, cụ thể là bạch tuộc, đại diện cho một nguồn protein chất lượng cao với tỷ lệ phần thịt ăn được vượt trội, thường chiếm từ 80\% đến 85\% trọng lượng cơ thể, cao hơn đáng kể so với các loài giáp xác hay cá xương \cite{pubmed_ice_storage}. Tuy nhiên, bản chất dễ hư hỏng của chúng đặt ra những thách thức lớn trong công tác bảo quản và đánh giá chất lượng. Sự suy giảm chất lượng bắt đầu ngay sau khi con vật bị đánh bắt, bị thúc đẩy bởi một loạt các phản ứng sinh hóa nội tại và sự xâm nhập của hệ vi sinh vật từ môi trường biển \cite{mdpi_fish_spoilage}. 
+
+Báo cáo này sẽ phân tích một cách chi tiết và toàn diện về khái niệm độ tươi, các cơ chế hư hỏng đặc thù và các phương pháp tiên tiến để xác định tình trạng chất lượng của bạch tuộc sau thu hoạch.
+
+\section{Khái niệm và đặc điểm sinh học của bạch tuộc tươi}
+
+\subsection{Định nghĩa độ tươi trong bối cảnh sinh hóa và thương mại}
+
+Độ tươi của bạch tuộc không chỉ là một trạng thái cảm quan mà còn là một chỉ số phản ánh tính nguyên vẹn của cấu trúc tế bào và sự ổn định của các hệ thống enzyme nội tại. Một cách chính xác, bạch tuộc tươi được định nghĩa là trạng thái sinh lý của con vật vừa mới được đánh bắt hoặc thu hoạch từ môi trường tự nhiên, chưa trải qua bất kỳ hình thức xử lý nhiệt, làm đông sâu, hay can thiệp bằng các hóa chất bảo quản nhân tạo \cite{tcvn_7265}. Trong trạng thái này, các đặc tính sinh hóa của mô cơ phải tương đương với trạng thái sống, với nồng độ các hợp chất nitơ bay hơi ở mức tối thiểu và hệ thống năng lượng tế bào (ATP) chưa bị phân hủy sâu sắc \cite{researchgate_squid_freshness}.
+
+Về mặt kỹ thuật, độ tươi được duy trì khi các màng bào quan (như lysosome) còn nguyên vẹn, ngăn chặn sự giải phóng các protease vào bào tương để bắt đầu quá trình tự phân giải \cite{agri_inst_ph}. Bất kỳ dấu hiệu nào của sự hư hỏng, dù là sự biến đổi màu sắc nhẹ do oxy hóa hay sự thay đổi cấu trúc cơ thịt do enzyme, đều đồng nghĩa với việc sản phẩm đã bắt đầu rời bỏ trạng thái tươi nguyên thủy. Việc làm lạnh ngay lập tức sau thu hoạch xuống gần $0^\circ C$ là phương pháp duy nhất được chấp nhận để duy trì trạng thái "tươi" trong một khoảng thời gian ngắn mà không làm thay đổi bản chất của thực phẩm \cite{dialnet_patagonian}.
+
+\subsection{Nhận diện tổng quan và hệ thống cảm giác hóa học (Chemotactile)}
+
+Việc nhận diện bạch tuộc tươi thông qua các giác quan vẫn được coi là phương pháp nhanh chóng và chính xác nhất trong thực tế sản xuất. Bạch tuộc chất lượng tốt sở hữu lớp da bóng sáng, màu sắc phân định rõ rệt với các sắc tố sống động \cite{pubmed_ice_storage}. Điều này liên quan trực tiếp đến cấu trúc của các túi sắc tố (\textit{chromatophores}), những cơ quan thần kinh-cơ phức tạp cho phép bạch tuộc thay đổi màu sắc khi còn sống \cite{pmc_color_change}. Khi con vật vừa mới chết, các cơ này vẫn giữ được trạng thái cấu trúc ổn định, tạo nên vẻ ngoài sáng bóng tự nhiên.
+
+Một đặc điểm sinh học độc đáo của bạch tuộc là hệ thống cảm giác hóa học tập trung ở các giác bám (\textit{suckers}). Bạch tuộc sử dụng các giác bám này để "nếm bằng cách chạm" (\textit{taste by touch}), cho phép chúng phát hiện các phân tử ít hòa tan trong môi trường thông qua các thụ thể hóa học (CRs) chuyên biệt \cite{pmc_chemotactile}. Khi bạch tuộc còn tươi, các giác bám này phải nguyên vẹn, có độ bám dính tự nhiên và không có dấu hiệu bị bao phủ bởi lớp chất nhầy đục \cite{pmc_food_choice}.
+
+\begin{table}[H]
+\centering
+\caption{Chỉ tiêu cảm quan nhận diện bạch tuộc tươi chất lượng cao}
+\begin{tabular}{p{3cm} p{6cm} p{5.5cm}}
+\toprule
+\textbf{Chỉ tiêu} & \textbf{Đặc điểm bạch tuộc tươi} & \textbf{Tầm quan trọng} \\
+\midrule
+Da và màu sắc & Da bóng, ẩm, sắc tố nâu xám hoặc hơi xanh ở lưng rõ rệt; bụng trắng sáng \cite{happyfood_tips} & Phản ánh túi sắc tố và oxy hóa. \\
+Mắt & Con người đen bóng, giác mạc trong suốt, không vệt máu \cite{pubmed_ice_storage} & Nhạy cảm với mất nước, vi khuẩn. \\
+Cơ thịt & Chắc chắn, đàn hồi cao, không vết lõm khi ấn \cite{fptshop_so_che} & Trạng thái protein myofibrillar. \\
+Mùi & Mùi rong biển tươi, mùi biển, không mùi lạ \cite{pubmed_ice_storage} & Chưa phân hủy amin/lipid. \\
+Xúc tu & Cuộn tròn tự nhiên, giác bám nguyên vẹn \cite{pubmed_ice_storage} & Trạng thái thần kinh-cơ. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Các cơ chế làm suy giảm chất lượng và hư hỏng ở bạch tuộc}
+
+Sự hư hỏng của bạch tuộc bắt đầu từ những thay đổi sinh hóa nội tại và kết thúc bằng sự phân hủy hoàn toàn do vi sinh vật. Ba cơ chế chính gồm: tự phân giải enzyme, oxy hóa lipid/sắc tố và vi sinh vật \cite{mdpi_fish_spoilage}.
+
+\subsection{Sự tự phân giải bằng enzyme (Enzymatic Autolysis)}
+
+Hoạt động autolytic trong cơ cánh tay bạch tuộc cao gấp 40-500 lần so với cá xương \cite{researchgate_proteolytic}.
+
+\textbf{Vai trò của hệ Protease:} Hệ thống cathepsin đóng vai trò chủ đạo. Sau khi chết, pH nội bào giảm dẫn đến vỡ màng lysosome, giải phóng protease \cite{agri_inst_ph}.
+
+\subsection{Sự oxy hóa (Oxidation)}
+
+Bạch tuộc chứa tỷ lệ axit béo không bão hòa đa (PUFA) cao \cite{mdpi_fatty_acid}.
+
+\textbf{Oxy hóa Lipid:} Tạo ra aldehyde và ketone, gây mùi hôi \cite{mdpi_antioxidant}. 
+
+\textbf{Biến đổi sắc tố:} Ommochrome bị oxy hóa làm da mất màu tự nhiên \cite{pubmed_ice_storage}. Polyphenol oxidase (PPO) gây đốm đen \cite{pubmed_ppo}.
+
+\subsection{Sự phát triển của vi sinh vật (Microbial growth)}
+
+Vi khuẩn \textit{Pseudomonas spp.}, \textit{Vibrio spp.} và \textit{Shewanella spp.} chiếm ưu thế trong bảo quản lạnh \cite{researchgate_sensory_scheme}.
+
+Chúng phân hủy hợp chất thành:
+\begin{itemize}
+    \item \textbf{Amoniac}: Mùi hôi thối \cite{researchgate_sensory_scheme}.
+    \item \textbf{Amin sinh học}: Cadaverine và putrescine \cite{pmc_biogenic_amines}.
+    \item \textbf{TMA}: Mùi cá ươn đặc trưng \cite{pmc_biogenic_squid}.
+\end{itemize}
+
+\section{Các phương pháp xác định và đánh giá độ tươi của bạch tuộc}
+
+\subsection{Phương pháp cảm quan và Chỉ số QIM}
+
+Chỉ số Chất lượng (QIM) cho điểm vi phạm dựa trên các thông số nhạy cảm như giác bám, độ bóng \cite{researchgate_sensory_scheme}.
+
+\subsection{Các phương pháp khách quan (Objective methods)}
+
+\begin{itemize}
+    \item \textbf{TVB-N}: Giới hạn 25–35 mg/100g \cite{researchgate_tvbn_hake}.
+    \item \textbf{TMA}: < 2 mg N/100g sản phẩm tươi \cite{researchgate_sensory_scheme}.
+    \item \textbf{K-value}: Phân hủy ATP diễn ra rất nhanh \cite{researchgate_atp}.
+    \item \textbf{Amin sinh học}: Histamine tối đa 50 ppm \cite{pmc_biogenic_amines}.
+\end{itemize}
+
+\section{Kết luận}
+
+Chất lượng bạch tuộc chịu chi phối bởi hệ protease nội tại và vi sinh vật. Cần kết hợp QIM và các chỉ số hóa học để đảm bảo an toàn.
+
+\newpage
+% --- TÀI LIỆU THAM KHẢO CHƯƠNG 2 (THỦ CÔNG - APA STYLE) ---
+\renewcommand{\bibname}{Tài liệu tham khảo Chương 2}
+\begin{thebibliography}{99}
+\addcontentsline{toc}{section}{Tài liệu tham khảo Chương 2}
+
+\bibitem{pubmed_ice_storage} Nirmal, N. P., et al. (2015). Sensory, biochemical and bacteriological properties of octopus (Cistopus indicus) stored in ice. \textit{Food Chemistry}.
+
+\bibitem{mdpi_fish_spoilage} Liu, X., et al. (2025). Mechanistic Insights into Fish Spoilage and Integrated Preservation Technologies. \textit{Applied Sciences}, 15(14), 7639.
+
+\bibitem{researchgate_proteolytic} Hurtado, J. L., et al. (2012). Characterization of proteolytic activity in octopus (Octopus vulgaris) arm muscle. \textit{Journal of Food Science}.
+
+\bibitem{tcvn_7265} Tiêu chuẩn Quốc gia. (2009). \textit{TCVN 7265:2009 về Quy phạm thực hành đối với thủy sản}.
+
+\bibitem{researchgate_squid_freshness} Vaz-Pires, P., et al. (2008). Characterization of Common Squid Using Several Freshness Indicators. \textit{Journal of Food Science}.
+
+\bibitem{agri_inst_ph} Agriculture Institute. (2023). \textit{The Impact of Acidic pH on Autolytic Enzymes in Fish Spoilage}.
+
+\bibitem{dialnet_patagonian} Ortiz, N., et al. (2021). Changes on quality parameters and sensory attributes of the Patagonian red octopus. \textit{Journal of Aquatic Food Product Technology}.
+
+\bibitem{pmc_color_change} PMC. (2024). \textit{High energetic cost of color change in octopuses}.
+
+\bibitem{pmc_chemotactile} PMC. (2024). \textit{Cephalopod chemotactile sensation}.
+
+\bibitem{pmc_food_choice} PMC. (2020). \textit{Sensorial Hierarchy in Octopus vulgaris's Food Choice: Chemical vs. Visual}.
+
+\bibitem{happyfood_tips} HappyFood. (2024). \textit{Cùng Hùng Hậu chọn mua bạch tuộc tươi ngon}.
+
+\bibitem{fptshop_so_che} FPT Shop. (2024). \textit{Hướng dẫn cách sơ chế bạch tuộc đơn giản}.
+
+\bibitem{mdpi_fatty_acid} MDPI. (2025). \textit{A Comparative Study of the Fatty Acid Profile of Common Octopus}.
+
+\bibitem{mdpi_antioxidant} MDPI. (2022). \textit{Antioxidant Effect of Octopus Byproducts in Canned Horse Mackerel}.
+
+\bibitem{mdpi_preservative} MDPI. (2022). \textit{Preservative Effect on Canned Mackerel lipids by Addition of Octopus Cooking Liquor}.
+
+\bibitem{pubmed_ppo} PubMed. (2024). \textit{Molecular Characterization of Polyphenol Oxidase}.
+
+\bibitem{frontiers_microbiome} Frontiers. (2024). \textit{Unique skin microbiome in octopuses}.
+
+\bibitem{researchgate_sensory_scheme} Barbosa, A., et al. (2009). Quality Index Method (QIM): Development of a sensorial scheme for common Octopus. \textit{Food Control}.
+
+\bibitem{pmc_biogenic_amines} Visciano, P., et al. (2016). Biogenic amines in seafood: a review. \textit{Frontiers in Microbiology}.
+
+\bibitem{pmc_biogenic_squid} PMC. (2011). \textit{Determination of Biogenic Amines and Endotoxin in Squid}.
+
+\bibitem{researchgate_tvbn_hake} Baixas-Nogueras, S., et al. (2013). Total volatile basic nitrogen during ice storage of European hake. \textit{Journal of Food Science}.
+
+\bibitem{researchgate_atp} ResearchGate. (2022). \textit{The ATP degradation process and formulas for K-value}.
+
+\bibitem{xrite_lab} X-Rite. (2024). \textit{LAB Color Space and Values}.
+
+\end{thebibliography}
+
+\end{document}
