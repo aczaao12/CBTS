@@ -1,5 +1,5 @@
 \babel@toc {vietnamese}{}\relax 
-\contentsline {chapter}{\numberline {1}Phân tích Chuyên sâu về Hình thái, Thành phần Dinh dưỡng và Biến đổi Sinh hóa trong Chế biến Bảo quản Bạch tuộc}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Phân tích về Hình thái, Thành phần Dinh dưỡng và Biến đổi Sinh hóa trong Chế biến Bảo quản Bạch tuộc}{1}{chapter.1}%
 \contentsline {section}{LỜI MỞ ĐẦU}{1}{section*.2}%
 \contentsline {section}{\numberline {1.1}Hệ thống Phân loại và Đặc điểm Hình thái Chức năng}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Cấu trúc Hình thái và Biomechanic của Hệ cơ}{1}{subsection.1.1.1}%
@@ -45,3 +45,21 @@
 \contentsline {subsection}{\numberline {3.6.2}Bảo Quản Sau Sơ Chế}{16}{subsection.3.6.2}%
 \contentsline {section}{\numberline {3.7}Kết Luận}{16}{section.3.7}%
 \contentsline {section}{Tài liệu tham khảo Chương 3}{17}{chapter*.10}%
+\contentsline {chapter}{\numberline {4}Bảo quản và chế biến bạch tuộc xông khói}{20}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Mở đầu}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Phân tích đặc tính sinh học và cấu trúc cơ thịt bạch tuộc}{20}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Quy trình sơ chế và xử lý tiền chế biến (Preliminary Processing)}{20}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Tiếp nhận và xử lý cơ học ban đầu}{21}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Kỹ thuật xử lý dịch nhớt và cải thiện cấu trúc}{21}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Công nghệ muối bạch tuộc (Salting)}{21}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Lựa chọn phương pháp muối ướt (Wet Salting)}{21}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Động học của hoạt độ nước ($a_w$) trong bảo quản}{22}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Công nghệ sấy bạch tuộc (Drying)}{22}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Hiện tượng tạo màng (Case Hardening)}{22}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}So sánh các phương pháp sấy}{22}{subsection.4.5.2}%
+\contentsline {section}{\numberline {4.6}Công nghệ xông khói bạch tuộc (Smoking)}{23}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Cơ chế bảo quản và tạo màu}{23}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Lựa chọn nguồn gỗ xông khói}{23}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4.7}Đánh giá chất lượng và tiêu chuẩn an toàn (TCVN 5649:2006)}{23}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Kết luận và khuyến nghị}{23}{section.4.8}%
+\contentsline {section}{Tài liệu tham khảo}{24}{chapter*.14}%

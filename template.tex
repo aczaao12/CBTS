@@ -17,143 +17,123 @@
 \usepackage{graphicx}
 \usepackage[space]{grffile} 
 \usepackage{float} 
-\usepackage{amsmath} 
+\usepackage{amsmath, amssymb} 
 \usepackage[hidelinks]{hyperref}
 \usepackage{booktabs} 
 \usepackage{longtable} 
 \usepackage{array}
+\usepackage{indentfirst}
+\usepackage{caption}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
 
 % --- CẤU HÌNH HEADERS ---
-\usepackage{titlesec}
-% Header 1 (Section): Cỡ 15pt, căn giữa, in đậm
+% Section: Cỡ 15pt, in đậm, căn giữa
 \titleformat{\section}
   {\centering\bfseries\fontsize{15pt}{18pt}\selectfont}
-  {}
-  {0pt}
-  {}
-% Header 2 & 3: Cỡ 13pt, in đậm
+  {\thesection.}
+  {0.5em}
+  {\uppercase}
+% Subsection: Cỡ 13pt, in đậm
 \titleformat{\subsection}
   {\bfseries\fontsize{13pt}{15.6pt}\selectfont}
+  {\thesubsection.}
+  {0.5em}
   {}
-  {0pt}
-  {}
+% Subsubsection: Cỡ 13pt, in đậm, in nghiêng
 \titleformat{\subsubsection}
-  {\bfseries\fontsize{13pt}{15.6pt}\selectfont}
-  {}
-  {0pt}
+  {\itshape\bfseries\fontsize{13pt}{15.6pt}\selectfont}
+  {\thesubsubsection.}
+  {0.5em}
   {}
 
-% --- KHOẢNG CÁCH TIÊU ĐỀ (Before 12pt) ---
-\titlespacing*{\section}{0pt}{12pt}{6pt}
+% --- KHOẢNG CÁCH TIÊU ĐỀ ---
+\titlespacing*{\section}{0pt}{18pt}{12pt}
 \titlespacing*{\subsection}{0pt}{12pt}{6pt}
 \titlespacing*{\subsubsection}{0pt}{12pt}{6pt}
 
-% --- THỤT ĐẦU DÒNG 0.5CM VÀ KHOẢNG CÁCHĐOẠN VĂN (Before 12pt) ---
-\usepackage{indentfirst} % Thụt đầu dòng kể cả đoạn đầu tiên
+% --- THỤT ĐẦU DÒNG VÀ KHOẢNG CÁCH ĐOẠN ---
 \setlength{\parindent}{0.5cm}
-\setlength{\parskip}{12pt}
+\setlength{\parskip}{6pt}
 
 % --- CẤU HÌNH CAPTION (Cỡ 11pt, in nghiêng) ---
-\usepackage{caption}
 \DeclareCaptionFont{size11}{\fontsize{11pt}{13.2pt}\selectfont}
-\captionsetup{font={it, size11}}
+\captionsetup{font={it, size11}, labelfont={bf, it}}
 
-% --- SỬA LỖI MÀU VÀ HỘP ---
 % --- CẤU HÌNH HỘP QUY TRÌNH ---
-\usepackage[most]{tcolorbox}
-\newtcolorbox{mybox}{colback=black!5, colframe=black!30, arc=0mm, boxrule=0.5pt, left=2pt, right=2pt, top=2pt, bottom=2pt}
-
-% --- TRANG BÌA ---
-\usepackage{tikz}
-\usepackage{setspace}
+\newtcolorbox{processbox}[1]{
+  colback=blue!5, 
+  colframe=blue!50!black, 
+  fonttitle=\bfseries,
+  title=#1,
+  arc=2mm,
+  boxrule=1pt,
+  left=10pt,
+  right=10pt,
+  top=5pt,
+  bottom=5pt
+}
 
 % --- CẤU HÌNH HEADER VÀ FOOTER ---
-\usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[R]{\fontsize{8pt}{9.6pt}\selectfont Hồ Quốc Thắng 23129398}
-\fancyfoot[C]{\fontsize{8pt}{9.6pt}\selectfont Bảo quản \& chế biến thuỷ sản | Aquatic Products Preservation and Processing Technologies | Nguyễn Anh Trinh}
-\fancyfoot[R]{\fontsize{8pt}{9.6pt}\selectfont \thepage} % Thêm số trang
+\fancyhead[R]{\fontsize{9pt}{11pt}\selectfont Hồ Quốc Thắng - 23129398}
+\fancyhead[L]{\fontsize{9pt}{11pt}\selectfont Báo cáo Chương 4}
+\fancyfoot[L]{\fontsize{8pt}{10pt}\selectfont Bảo quản \& chế biến thuỷ sản}
+\fancyfoot[R]{\fontsize{9pt}{11pt}\selectfont Trang \thepage}
 \renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
 
 \graphicspath{{E:/study/KNVSTP/}}
 
 \begin{document}
 
 % --- TRANG BÌA ---
-\pagenumbering{gobble}
-\pagestyle{empty}
 \begin{titlepage}
 \begin{tikzpicture}[remember picture, overlay]
-  % Khung ngoài
-  \draw[line width=2.5pt]
-    ([xshift=1.2cm, yshift=-1.2cm]current page.north west)
-    rectangle
-    ([xshift=-1.2cm, yshift=1.2cm]current page.south east);
-  % Khung trong
-  \draw[line width=0.8pt]
-    ([xshift=1.45cm, yshift=-1.45cm]current page.north west)
-    rectangle
-    ([xshift=-1.45cm, yshift=1.45cm]current page.south east);
+  \draw[line width=2pt] ([xshift=1.2cm, yshift=-1.2cm]current page.north west) rectangle ([xshift=-1.2cm, yshift=1.2cm]current page.south east);
+  \draw[line width=0.5pt] ([xshift=1.35cm, yshift=-1.35cm]current page.north west) rectangle ([xshift=-1.35cm, yshift=1.35cm]current page.south east);
 \end{tikzpicture}
 
 \begin{center}
-
-\vspace*{0.4cm}
-{\fontsize{13pt}{16pt}\selectfont\textbf{BỘ GIÁO DỤC VÀ ĐÀO TẠO}}\\
-{\fontsize{13pt}{16pt}\selectfont\textbf{TRƯỜNG ĐẠI HỌC NÔNG LÂM TP.HCM}}\\
-{\fontsize{13pt}{16pt}\selectfont\textbf{KHOA CÔNG NGHỆ HÓA HỌC VÀ THỰC PHẨM}}
-
-\vspace{0.6cm}
-
-\includegraphics[width=4.5cm]{0.jpg}
-
-\vspace{0.8cm}
-
-{\fontsize{18pt}{22pt}\selectfont\textbf{BÀI TẬP VỀ NHÀ}}
-
-\vspace{0.4cm}
-
-{\fontsize{16pt}{20pt}\selectfont\textbf{BẢO QUẢN \& CHẾ BIẾN THỦY SẢN}}
-
-\vspace{1.6cm}
-
+    \vspace*{0.5cm}
+    {\fontsize{14pt}{17pt}\selectfont \textbf{BỘ GIÁO DỤC VÀ ĐÀO TẠO}} \\
+    {\fontsize{14pt}{17pt}\selectfont \textbf{TRƯỜNG ĐẠI HỌC NÔNG LÂM TP. HỒ CHÍ MINH}} \\
+    {\fontsize{14pt}{17pt}\selectfont \textbf{KHOA CÔNG NGHỆ HÓA HỌC VÀ THỰC PHẨM}} \\
+    
+    \vspace{1cm}
+    \includegraphics[width=4cm]{0.jpg} % Đảm bảo file 0.jpg có trong thư mục
+    
+    \vspace{1.5cm}
+    {\fontsize{20pt}{24pt}\selectfont \textbf{BÀI TẬP VỀ NHÀ}} \\
+    \vspace{0.5cm}
+    {\fontsize{18pt}{22pt}\selectfont \textbf{HỌC PHẦN: BẢO QUẢN VÀ CHẾ BIẾN THỦY SẢN}} \\
+    
+    \vspace{2cm}
+    {\fontsize{16pt}{20pt}\selectfont \textbf{ĐỀ TÀI:}} \\
+    \vspace{0.5cm}
+    {\fontsize{14pt}{18pt}\selectfont \textbf{NGHIÊN CỨU QUY TRÌNH SƠ CHẾ, MUỐI, SẤY VÀ XÔNG KHÓI BẠCH TUỘC (OCTOPUS SP.)}}
+    
+    \vspace{3cm}
+    \begin{flushleft}
+        \hspace{2cm} \textbf{Giảng viên hướng dẫn:} Nguyễn Anh Trinh \\
+        \hspace{2cm} \textbf{Sinh viên thực hiện:} Hồ Quốc Thắng \\
+        \hspace{2cm} \textbf{Mã số sinh viên:} 23129398 \\
+        \hspace{2cm} \textbf{Lớp:} DH23VT
+    \end{flushleft}
+    
+    \vfill
+    {\fontsize{13pt}{16pt}\selectfont \textbf{Thành phố Hồ Chí Minh, tháng 05/2026}}
 \end{center}
-
-\noindent
-{\fontsize{13pt}{16pt}\selectfont\textbf{GVGD:} Nguyễn Anh Trinh}\\
-{\fontsize{13pt}{16pt}\selectfont\textbf{}}
-
-\vspace{0.8cm}
-
-\begin{center}
-{\fontsize{13pt}{16pt}\selectfont\textbf{Sinh viên thực hiện}}\\[6pt]
-\begin{tabular}{@{\hspace{0.5cm}} p{6cm} @{\hspace{1.5cm}} p{3cm} @{\hspace{0.5cm}}}
-\toprule
-\textbf{Họ và tên} & \textbf{MSSV} \\
-\midrule
-Hồ Quốc Thắng     & 23129398 \\[3pt]
-
-\bottomrule
-\end{tabular}
-\end{center}
-
-\vfill
-
-\begin{center}
-{\fontsize{13pt}{16pt}\selectfont\textbf{Thành phố Hồ Chí Minh, tháng 3/2026}}
-\end{center}
-
-
 \end{titlepage}
 
-% --- TRANG MỤC LỤC ---
-\renewcommand{\contentsname}{MỤC LỤC}
+\newpage
 \tableofcontents
 \newpage
 
-% --- NỘI DUNG CHÍNH ---
 \pagenumbering{arabic}
 \setcounter{page}{1}
 \pagestyle{fancy}

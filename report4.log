@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.7)  10 MAY 2026 00:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.7)  10 MAY 2026 00:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./report_final.tex
-(report_final.tex
+**./report4.tex
+(report4.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (E:\miktex\tex/latex/base\report.cls
@@ -1052,11 +1052,11 @@ File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
 ) (E:\miktex\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count347
-) (report_final.aux
+) (report4.aux
 Package babel Info: 'vietnamese' activates 'vietnamese' shorthands.
 (babel)             Reported on input line 9.
 )
-\openout1 = `report_final.aux'.
+\openout1 = `report4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
 LaTeX Font Info:    ... okay on input line 77.
@@ -1135,14 +1135,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 77.
- (report_final.out)
-(report_final.out)
+ (report4.out) (report4.out)
 \@outlinefile=\write4
-\openout4 = `report_final.out'.
+\openout4 = `report4.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<E:/study/KNVSTP/0.jpg, id=262, 94.2795pt x 94.2795pt>
+<E:/study/KNVSTP/0.jpg, id=74, 94.2795pt x 94.2795pt>
 File: E:/study/KNVSTP/0.jpg Graphic file (type jpg)
 <use E:/study/KNVSTP/0.jpg>
 Package pdftex.def Info: E:/study/KNVSTP/0.jpg  used on input line 105.
@@ -1184,821 +1183,169 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <13> not available
 [1
 
 {C:/Users/aczaa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{E:/miktex/fon
-ts/enc/dvips/vntex/t5.enc} <E:/study/KNVSTP/0.jpg>] (report_final.toc
+ts/enc/dvips/vntex/t5.enc} <E:/study/KNVSTP/0.jpg>] (report4.toc
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
 .
 
 (E:\miktex\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.25 ... (Objective methods)}{7}{subsection.2.3.2}
-                                                  % [1
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.48 ...báº¡ch tuá»™c xÃ´ng khá»‘i}{20}{chapter.4}
-                                                  % [2])
+))
 \tf@toc=\write5
-\openout5 = `report_final.toc'.
+\openout5 = `report4.toc'.
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.149 \newpage
-               [3]
-Ch\uhorn \ohorn ng 1.
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 159.
-
-[1
-
-] [2] [3]
-LaTeX Font Info:    Trying to load font information for T5+pcr on input line 22
-2.
- (E:\miktex\tex/latex/vntex\t5pcr.fd
-File: t5ucr.fd 2005/08/24 Fontinst v1.929 font definitions for T5/pcr.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
-\T5/pcr/m/n/13 org / cbook / ck-[]12-[]cbse-[]biology-[]class-[]11 / section / 
-4 . 10 /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
-[]\T5/ptm/m/n/13 WGNHS. Cephalo-pod Mol-lusks: Squid and Oc-to-pus. []$\T5/pcr/
-m/n/13 https :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
-\T5/pcr/m/n/13 / / home . wgnhs . wisc . edu / wisconsin-[]geology / fossils /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-[]\T5/ptm/m/n/13 ResearchGate. Amino acid com-po-si-tion of early stages of cep
-halopods.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-[]$\T5/pcr/m/n/13 https : / / www . researchgate . net / publication / 22243064
-9 _ Amino _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
-[]\T5/ptm/m/n/13 FAO. Chap-ter 10: Cephalopods. []$\T5/pcr/m/n/13 https : / / w
-ww . fao . org / 4 / v7180e /
- []
-
-
-Underfull \hbox (badness 1325) in paragraph at lines 238--239
-[]\T5/ptm/m/n/13 PMC. Ef-fects of dif-fer-ent pro-tein cross-linking de-grees o
-n gelling prop-er-ties.
- []
-
-
-Underfull \hbox (badness 1867) in paragraph at lines 240--241
-[]\T5/ptm/m/n/13 ResearchGate. Re-duc-tion of formalde-hyde residues in jumbo s
-quid. []$\T5/pcr/m/n/13 https :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
-\T5/pcr/m/n/13 / / www . researchgate . net / publication / 326670590 _ Reducti
-on _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
-[]\T5/ptm/m/n/13 Hiperbaric. Un-lock-ing the ben-e-fits of high pres-sure pro-c
-ess-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
-\T5/ptm/m/n/13 ing (HPP) for oc-to-pus. []$\T5/pcr/m/n/13 https : / / www . hip
-erbaric . com / en /
- []
-
-
-Overfull \hbox (81.05457pt too wide) in paragraph at lines 242--243
-\T5/pcr/m/n/13 unlocking-[]the-[]benefits-[]of-[]high-[]pressure-[]processing-[
-]hpp-[]for-[]octopus/$[] 
- []
-
-
-Underfull \hbox (badness 1308) in paragraph at lines 244--245
-[]\T5/ptm/m/n/13 PubMed. Octopus-derived an-tiox-i-dant pep-tide pro-tects agai
-nst ox-ida-tive stress.
- []
-
-
-Underfull \hbox (badness 1661) in paragraph at lines 246--247
-[]\T5/ptm/m/n/13 PMC. In-hi-bi-tion of Pathogenic Bac-te-ria by Oc-to-pus Om-mo
-chrome Pig-ments.
- []
-
-[4
-
-]
-Ch\uhorn \ohorn ng 2.
-[5
-
-] [6]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-11.
- (E:\miktex\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [7{E:/miktex/fonts/enc/dvips/base/8r.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
-[]\T5/ptm/m/n/13 Hurtado, J. L., et al. (2012). Char-ac-ter-i-za-tion of pro-te
--olytic ac-tiv-ity
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
-\T5/ptm/m/n/13 in oc-to-pus (Oc-to-pus vul-garis) arm mus-cle. \T5/ptm/m/it/13 
-Jour-nal of Food Sci-ence\T5/ptm/m/n/13 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
-[]$\T5/pcr/m/n/13 https : / / www . researchgate . net / publication / 22958892
-7 _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
-\T5/pcr/m/n/13 Characterization _ of _ proteolytic _ activity _ in _ octopus _
- []
-
-
-Underfull \hbox (badness 3138) in paragraph at lines 347--348
-[]\T5/ptm/m/n/13 Ti¶u chu©n Quèc gia. (2009). \T5/ptm/m/it/13 TCVN 7265:2009 v·
- Quy ph¤m thüc h nh
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
-\T5/ptm/m/it/13 ^^_èi vîi thõy s£n\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / 
-/ caselaw . vn / van-[]ban-[]phap-[]luat /
- []
-
-
-Overfull \hbox (805.76576pt too wide) in paragraph at lines 347--348
-\T5/pcr/m/n/13 253532-[]tieu-[]chuan-[]quoc-[]gia-[]tcvn-[]7265-[]2009-[]cac-[]
-rcp-[]52-[]2003-[]rev-[]4-[]2008-[]ve-[]quy-[]pham-[]thuc-[]hanh-[]doi-[]voi-[]
-thuy-[]san-[]va-[]san-[]pham-[]thuy-[]san-[]nam-[]2009-[]van-[]ban-[]het-[]hieu
--[]luc$[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
-\T5/pcr/m/n/13 publication / 230177427 _ Characterization _ of _ Common _ Squid
- _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
-[]\T5/ptm/m/n/13 Agriculture In-sti-tute. (2023). \T5/ptm/m/it/13 The Im-pact o
-f Acidic pH
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
-\T5/ptm/m/it/13 on Au-tolytic En-zymes in Fish Spoilage\T5/ptm/m/n/13 . []$\T5/
-pcr/m/n/13 https : / /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
-\T5/pcr/m/n/13 agriculture . institute / quality-[]assurance-[]dfpt /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
-[]\T5/ptm/m/n/13 HappyFood. (2024). \T5/ptm/m/it/13 Còng Hòng Hªu chån mua
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 361--362
-\T5/ptm/m/it/13 b¤ch tuëc t÷ìi ngon\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : /
- / happyfood . vn /
- []
-
-
-Overfull \hbox (190.91362pt too wide) in paragraph at lines 361--362
-\T5/pcr/m/n/13 cung-[]hung-[]hau-[]chon-[]mua-[]bach-[]tuoc-[]tuoi-[]ngon-[]va-
-[]lam-[]cach-[]nao-[]de-[]bao-[]quan-[]dung-[]nhe/$[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
-[]\T5/ptm/m/n/13 FPT Shop. (2024). \T5/ptm/m/it/13 H÷îng d¨n c¡ch sì ch¸ b¤ch t
-uëc ^^_ìn
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
-\T5/ptm/m/it/13 gi£n\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / fptshop . co
-m . vn / tin-[]tuc / dien-[]may /
- []
-
-[8
-
-]
-Underfull \hbox (badness 6110) in paragraph at lines 373--374
-[]\T5/ptm/m/n/13 Frontiers. (2024). \T5/ptm/m/it/13 Unique skin mi-cro-biome in
- oc-to-puses\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / www .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
-\T5/pcr/m/n/13 frontiersin . org / journals / marine-[]science / articles / 10 
-.
- []
-
-
-Underfull \hbox (badness 8000) in paragraph at lines 375--376
-[]\T5/ptm/m/n/13 Barbosa, A., et al. (2009). Qual-ity In-dex Method (QIM): De-v
-el-op-ment
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
-\T5/ptm/m/n/13 of a sen-so-rial scheme for com-mon Oc-to-pus. \T5/ptm/m/it/13 F
-ood Con-trol\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
-\T5/pcr/m/n/13 / / www . researchgate . net / publication / 222697531 _ Quality
- _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
-\T5/pcr/m/n/13 Index _ Method _ QIM _ Development _ of _ a _ sensorial _ scheme
- _ for _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
-\T5/pcr/m/n/13 net / publication / 251575537 _ Total _ volatile _ basic _ nitro
-gen _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
-\T5/pcr/m/n/13 and _ trimethylamine _ nitrogen _ levels _ during _ ice _ storag
-e _ of _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
-\T5/pcr/m/n/13 European _ hake _ Merluccius _ merluccius _ A _ seasonal _ and _
- size _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
-[]\T5/ptm/m/n/13 ResearchGate. (2022). \T5/ptm/m/it/13 The ATP degra-da-tion pr
-o-cess and for-mu-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
-\T5/ptm/m/it/13 las for K-value\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / w
-ww . researchgate . net / figure /
- []
-
-
-Overfull \hbox (135.80257pt too wide) in paragraph at lines 383--384
-\T5/pcr/m/n/13 A-[]The-[]ATP-[]degradation-[]process-[]B-[]The-[]formulas-[]use
-d-[]for-[]calculating-[]K-[]value _
- []
-
-
-Underfull \hbox (badness 1226) in paragraph at lines 385--386
-[]\T5/ptm/m/n/13 X-Rite. (2024). \T5/ptm/m/it/13 LAB Color Space and Val-ues\T5
-/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / www . xrite . com /
- []
-
-[9]
-Ch\uhorn \ohorn ng 3.
-[10
-
-] [11] [12] [13] [14] [15] [16]
-Underfull \hbox (badness 5064) in paragraph at lines 553--554
-[]\T5/ptm/m/n/13 VinID. (2026). \T5/ptm/m/it/13 C¡ch l m b¤ch tuëc s¤ch nhanh, 
-^^_ìn gi£n m  chà em
- []
-
-
-Underfull \hbox (badness 1194) in paragraph at lines 553--554
-\T5/ptm/m/it/13 nëi trñ n o công c¦n\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : 
-/ / vinid . net / blog / bi-[]quyet-[]nau-[]an /
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 555--556
-[]\T5/ptm/m/n/13 ^^^i»n M¡y Xanh. (2026). \T5/ptm/m/it/13 B½ quy¸t c¡ch l m s¤c
-h b¤ch tuëc gián ngon, h¸t
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 555--556
-\T5/ptm/m/it/13 nhît v  khæng tanh\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / 
-/ www . dienmayxanh . com / vao-[]bep /
- []
-
-
-Overfull \hbox (78.36153pt too wide) in paragraph at lines 555--556
-\T5/pcr/m/n/13 bi-[]quyet-[]cach-[]lam-[]sach-[]bach-[]tuoc-[]gion-[]ngon-[]het
--[]nhot-[]va-[]khong-[]24228$[] 
- []
-
-
-Underfull \hbox (badness 6493) in paragraph at lines 557--558
-[]\T5/ptm/m/n/13 FPT Shop. (2026). \T5/ptm/m/it/13 H÷îng d¨n c¡ch sì ch¸ b¤ch t
-uëc ^^_ìn gi£n, giú
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
-[]\T5/ptm/m/n/13 Te Papa. (2026). \T5/ptm/m/it/13 The dif-fer-ence be-tween col
-os-sal squid, gi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
-\T5/ptm/m/it/13 ant squid, and oc-to-pus\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 http
-s : / / www . tepapa . govt . nz /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
-\T5/pcr/m/n/13 discover-[]collections / read-[]watch-[]play / colossal-[]squid 
-/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 561--562
-[]\T5/ptm/m/n/13 OLM. (2026). \T5/ptm/m/it/13 Düa v o ^^_°c ^^_iºm n o ^^_º ph¥
-n bi»t
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 561--562
-\T5/ptm/m/it/13 müc v  b¤ch tuëc\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / 
-olm . vn / cau-[]hoi /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 561--562
-\T5/pcr/m/n/13 dua-[]vao-[]dac-[]diem-[]nao-[]de-[]phan-[]biet-[]muc-[]va-[]bac
-h-[]tuoc .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 563--564
-[]\T5/ptm/m/n/13 ^^^i»n M¡y Xanh. (2026). \T5/ptm/m/it/13 ^^^°c ^^_iºm cõa müc 
-kh¡c vîi b¤ch
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 563--564
-\T5/ptm/m/it/13 tuëc l  g¼?\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / www .
- dienmayxanh . com / vao-[]bep /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 567--568
-[]\T5/ptm/m/n/13 Underwater360. (2026). \T5/ptm/m/it/13 6 In-cred-i-ble Dif-fer
--ences Be-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 567--568
-\T5/ptm/m/it/13 tween Oc-to-puses and Squid\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 h
-ttps : / / www . uw360 . asia /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 571--572
-[]\T5/ptm/m/n/13 VTC News. (2026). \T5/ptm/m/it/13 C¡ch l m s¤ch müc èng v 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 571--572
-\T5/ptm/m/it/13 b¤ch tuëc, khæng bà tanh\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 http
-s : / / vtcnews . vn /
- []
-
-
-Overfull \hbox (15.50755pt too wide) in paragraph at lines 571--572
-\T5/pcr/m/n/13 cach-[]lam-[]sach-[]muc-[]ong-[]va-[]bach-[]tuoc-[]khong-[]bi-[]
-tanh-[]ar768198 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--576
-[]\T5/ptm/m/n/13 My Kitchen in Spain. (2016). \T5/ptm/m/it/13 YET MORE TEN-TA-C
-LE AD-VEN-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 575--576
-\T5/ptm/m/it/13 TURES^^VOCTOPUS\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 http : / / my
-kitcheninspain . blogspot . com /
- []
-
-[17
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 579--580
-[]\T5/ptm/m/n/13 OlverIndulgence. (2025). \T5/ptm/m/it/13 How to Break Down Who
-le Oc-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--580
-\T5/ptm/m/it/13 to-pus\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / olverindul
-gence . com / 2025 / 03 / 05 /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--582
-[]\T5/ptm/m/n/13 Monterey Bay Aquar-ium. (2026). \T5/ptm/m/it/13 Cephalopods | 
-An-i-mals\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 581--582
-\T5/pcr/m/n/13 / / www . montereybayaquarium . org / animals / animals-[]a-[]to
--[]z /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--584
-[]\T5/ptm/m/n/13 D¥n Vi»t. (2026). \T5/ptm/m/it/13 C¡ch sì ch¸ müc èng v  b¤ch
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--584
-\T5/ptm/m/it/13 tuëc nhanh, ^^_ìn gi£n\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https 
-: / / danviet . vn /
- []
-
-
-Overfull \hbox (86.46759pt too wide) in paragraph at lines 583--584
-\T5/pcr/m/n/13 cach-[]so-[]che-[]muc-[]ong-[]va-[]bach-[]tuoc-[]nhanh-[]don-[]g
-ian-[]7777707139-[]d463672 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--586
-[]\T5/ptm/m/n/13 Fishfiles. (2026). \T5/ptm/m/it/13 How to pre-pare squid, cut-
-tle-fish and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--586
-\T5/ptm/m/it/13 oc-to-pus (cephalopods)\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https
- : / / www . fishfiles .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--586
-\T5/pcr/m/n/13 com . au / preparing-[]seafood / how-[]to-[]guides /
- []
-
-
-Underfull \hbox (badness 5756) in paragraph at lines 587--588
-[]\T5/ptm/m/n/13 Nghia Mien Tay T257. (2026). \T5/ptm/m/it/13 How to Make Oc-to
--pus Quickly, Sim-ply,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 591--592
-[]\T5/ptm/m/n/13 ^^^£o H£i S£n. (2026). \T5/ptm/m/it/13 C¡ch l m b¤ch tuëc sèt 
-th¡i chua cay b­t
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 591--592
-\T5/ptm/m/it/13 mçi ngon t¶ t¡i\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / d
-aohaisan . vn / blogs / mon-[]ngon /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 593--594
-[]\T5/ptm/m/n/13 HappyFood. (2026). \T5/ptm/m/it/13 Còng Hòng Hªu håc ngay c¡ch
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 593--594
-\T5/ptm/m/it/13 sì ch¸ b¤ch tuëc s¤ch\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https :
- / / happyfood . vn /
- []
-
-
-Overfull \hbox (157.51057pt too wide) in paragraph at lines 593--594
-\T5/pcr/m/n/13 cung-[]hung-[]hau-[]hoc-[]ngay-[]cach-[]so-[]che-[]bach-[]tuoc-[
-]sach-[]khong-[]de-[]lai-[]mui-[]tanh-[]nhe/$[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 595--596
-[]\T5/ptm/m/n/13 Dh Foods. (2026). \T5/ptm/m/it/13 Bä tói c¡ch sì ch¸ b¤ch tuëc
- sèng khæng
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 595--596
-\T5/ptm/m/it/13 tanh, s¤ch s³\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / www
- . dhfoods . com . vn / vi / meo-[]vat /
- []
-
-
-Overfull \hbox (165.01155pt too wide) in paragraph at lines 595--596
-\T5/pcr/m/n/13 bo-[]tui-[]cach-[]so-[]che-[]bach-[]tuoc-[]song-[]khong-[]tanh-[
-]sach-[]se-[]nhanh-[]chong-[]ngay-[]tai-[]nha$[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 597--598
-[]\T5/ptm/m/n/13 Seafood Boss. (2026). \T5/ptm/m/it/13 How To Clean And Pre-par
-e Oc-to-pus For
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 597--598
-\T5/ptm/m/it/13 Cook-ing\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / seafoodb
-oss . com . au / blogs / news /
- []
-
-
-Underfull \hbox (badness 5147) in paragraph at lines 599--600
-[]\T5/ptm/m/n/13 Jess Pryles. (2026). \T5/ptm/m/it/13 Grilled Oc-to-pus with le
-mon & oregano\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 601--602
-[]\T5/ptm/m/n/13 GialloZafferano. (2026). \T5/ptm/m/it/13 How to Clean and Cook
- Oc-to-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 601--602
-\T5/ptm/m/it/13 pus\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / www . gialloz
-afferano . com / recipes /
- []
-
-[18]
-Underfull \hbox (badness 1082) in paragraph at lines 603--604
-[]\T5/ptm/m/n/13 Hawaiian Bath & Body. (2026). \T5/ptm/m/it/13 Salt Scrub vs Su
-gar Scrub: Which Ex-fo-liant
- []
-
-
-Overfull \hbox (48.0985pt too wide) in paragraph at lines 603--604
-\T5/pcr/m/n/13 salt-[]scrub-[]vs-[]sugar-[]scrub-[]which-[]exfoliant-[]is-[]bes
-t-[]for-[]your-[]skin$[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 607--608
-[]\T5/ptm/m/n/13 Dh Foods. (2026). \T5/ptm/m/it/13 Bä tói c¡ch sì ch¸ b¤ch tuëc
- sèng
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 607--608
-\T5/ptm/m/it/13 khæng tanh\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 http : / / dhfoods
- . com . vn / vi / meo-[]vat /
- []
-
-
-Overfull \hbox (165.01155pt too wide) in paragraph at lines 607--608
-\T5/pcr/m/n/13 bo-[]tui-[]cach-[]so-[]che-[]bach-[]tuoc-[]song-[]khong-[]tanh-[
-]sach-[]se-[]nhanh-[]chong-[]ngay-[]tai-[]nha$[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 609--610
-[]\T5/ptm/m/n/13 Reddit. (2014). \T5/ptm/m/it/13 I have a frozen oc-to-pus.... 
-Any sug-ges-tions?\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 609--610
-\T5/pcr/m/n/13 / / www . reddit . com / r / Cooking / comments / 2j8oq7 / i _ h
-ave _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
-[]\T5/ptm/m/n/13 Korkmaz. (2026). \T5/ptm/m/it/13 C¡c kiºu c­t, th¡i khæng ph£i
- ai công
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
-\T5/ptm/m/it/13 bi¸t\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / korkmaz . vn
- / blogs / tu-[]van-[]su-[]dung /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 617--618
-[]\T5/ptm/m/n/13 VnExpress Cook-ing. (2026). \T5/ptm/m/it/13 C¡c kiºu c­t, th¡i
- khæng
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 617--618
-\T5/ptm/m/it/13 ph£i ai công bi¸t\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / /
- vnexpress . net /
- []
-
-
-Overfull \hbox (86.19463pt too wide) in paragraph at lines 617--618
-\T5/pcr/m/n/13 doi-[]song-[]cooking-[]cac-[]kieu-[]cat-[]thai-[]khong-[]phai-[]
-ai-[]cung-[]biet-[]4721468 .
- []
-
-
-Underfull \hbox (badness 5460) in paragraph at lines 619--620
-\T5/ptm/m/it/13 them?\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / www . reddi
-t . com / r / Cooking / comments / b38xng / i _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--624
-[]\T5/ptm/m/n/13 Chef H. Del-gado. (2026). \T5/ptm/m/it/13 Takoy-aki, de-li-cio
-us Japanese Oc-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 623--624
-\T5/ptm/m/it/13 to-pus Frit-ters\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / 
-chefhdelgado . com / post /
- []
-
-[19]
-Ch\uhorn \ohorn ng 4.
-[20
-
-]
-Underfull \hbox (badness 1248) in paragraph at lines 668--669
+l.149 	\newpage
+                [1
+
+] [1]
+Underfull \hbox (badness 1248) in paragraph at lines 190--191
 []|\T5/ptm/m/n/13 Lo¤i bä nguçn en-zyme v  vi
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 682.
+(hyperref)                removing `math shift' on input line 204.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 682.
+(hyperref)                removing `subscript' on input line 204.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 682.
+(hyperref)                removing `math shift' on input line 204.
 
-[21]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+08.
+(E:\miktex\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [2{E:/miktex/fonts/enc/dvips/base/8r.enc}]
 
-LaTeX Warning: Citation `fish_preservation' on page 22 undefined on input line 
-715.
+LaTeX Warning: Citation `fish_preservation' on page 3 undefined on input line 2
+37.
 
 
-LaTeX Warning: Citation `pressure_drying' on page 22 undefined on input line 71
-6.
+LaTeX Warning: Citation `pressure_drying' on page 3 undefined on input line 238
+.
 
-[22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 763--764
+[3] [4]
+LaTeX Font Info:    Trying to load font information for T5+pcr on input line 28
+3.
+ (E:\miktex\tex/latex/vntex\t5pcr.fd
+File: t5ucr.fd 2005/08/24 Fontinst v1.929 font definitions for T5/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 \T5/ptm/m/it/13 ture of Oc-to-pus\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / /
  www . researchgate . net / publication /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 763--764
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 \T5/pcr/m/n/13 229726846 _ Impact _ of _ Physical _ and _ Chemical _ Pretreatme
 nts _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 765--766
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 \T5/ptm/m/it/13 to-pus\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / www . rese
 archgate . net / publication / 404359995 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 765--766
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 \T5/pcr/m/n/13 Thin-[]layer _ drying _ kinetics _ and _ quality _ assessment _ 
 of _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--768
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
 []\T5/ptm/m/n/13 ResearchGate. (2009). \T5/ptm/m/it/13 Com-bined ef-fect of vac
 uum-packaging and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--768
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
 \T5/ptm/m/it/13 oregano es-sen-tial oil on Mediter-ranean oc-to-pus\T5/ptm/m/n/
 13 . []$\T5/pcr/m/n/13 https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--768
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
 \T5/pcr/m/n/13 researchgate . net / publication / 23950398 _ Combined _ effect 
 _
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 769--770
+Underfull \hbox (badness 1147) in paragraph at lines 291--292
 []\T5/ptm/m/n/13 Gokoglu, N. (2023). \T5/ptm/m/it/13 Physic-o-chem-i-cal and te
 x-tu-ral prop-er-ties of squid treated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 769--770
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 \T5/ptm/m/it/13 with or-ganic acids\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : /
  / www . ojs . unimal . ac . id / index . php /
  []
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 777--778
+Underfull \hbox (badness 5607) in paragraph at lines 299--300
 []\T5/ptm/m/n/13 CTLA. \T5/ptm/m/it/13 Wa-ter Ac-tiv-ity (aw) Test\T5/ptm/m/n/1
 3 . []$\T5/pcr/m/n/13 https : / / ctlatesting . com / blogs /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 783--784
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
 []\T5/ptm/m/n/13 Biotech Asia. (2021). \T5/ptm/m/it/13 Study of Salted Oc-to-pu
 s Dry-ing Ki-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 783--784
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
 \T5/ptm/m/it/13 net-ics\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / www . bio
 tech-[]asia . org / vol18no3 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 785--786
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 []\T5/ptm/m/n/13 ResearchGate. \T5/ptm/m/it/13 Phe-no-lic an-tiox-i-dant in woo
 d smoke\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 785--786
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 \T5/pcr/m/n/13 researchgate . net / publication / 11761203 _ Phenolic _
  []
 
-[24
+[5
 
 ]
-Underfull \hbox (badness 2600) in paragraph at lines 791--792
+Underfull \hbox (badness 2600) in paragraph at lines 313--314
 []\T5/ptm/m/n/13 Vä xóc x½ch Col-la-gen. \T5/ptm/m/it/13 Gé sçi xæng khâi nhªp 
 kh©u tø ^^^ùc\T5/ptm/m/n/13 . []$\T5/pcr/m/n/13 https : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 793--794
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 []\T5/ptm/m/n/13 HTVLAB. \T5/ptm/m/it/13 TCVN 5649:2006 v· thõy s£n khæ - y¶u c
 ¦u v» sinh\T5/ptm/m/n/13 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 793--794
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 []$\T5/pcr/m/n/13 https : / / htvlab . com / thong-[]tin-[]huu-[]ich / tieu-[]c
 huan /
  []
 
 
-Overfull \hbox (62.46257pt too wide) in paragraph at lines 793--794
+Overfull \hbox (62.46257pt too wide) in paragraph at lines 315--316
 \T5/pcr/m/n/13 thuy-[]san-[]kho-[]yeu-[]cau-[]ve-[]sinh-[]tieu-[]chuan-[]viet-[
 ]nam-[]tcvn-[]5649-[]2006 .
  []
 
-[25] (report_final.aux)
+[6] (report4.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -2011,23 +1358,17 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `report_final.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report_final.out':
-(rerunfilecheck)             Before: 24BA3DA1E293742855009824A384489B;20184
-(rerunfilecheck)             After:  2694446126EF9CC908B321DA7C0DE5FF;20184.
+Package rerunfilecheck Info: File `report4.out' has not changed.
+(rerunfilecheck)             Checksum: 1F6DFE4FC7A40E4FD0187A093EBC7679;4720.
  ) 
 Here is how much of TeX's memory you used:
- 26224 strings out of 467866
- 471992 string characters out of 5435149
- 950466 words of memory out of 5000000
- 54481 multiletter control sequences out of 15000+600000
- 658739 words of font info for 68 fonts, out of 8000000 for 9000
+ 25924 strings out of 467866
+ 467574 string characters out of 5435149
+ 938931 words of memory out of 5000000
+ 54327 multiletter control sequences out of 15000+600000
+ 656476 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,13n,107p,1220b,637s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,12n,107p,998b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <E:/miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/miktex/fonts/type1/p
 ublic/amsfonts/cm/cmmi9.pfb><E:/miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb
 ><E:/miktex/fonts/type1/public/amsfonts/cm/cmr9.pfb><E:/miktex/fonts/type1/publ
@@ -2035,9 +1376,9 @@ ic/amsfonts/cm/cmsy10.pfb><E:/miktex/fonts/type1/public/amsfonts/cm/cmsy9.pfb><
 E:/miktex/fonts/type1/vntex/urwvn/ucrr8v.pfb><E:/miktex/fonts/type1/vntex/urwvn
 /utmb8v.pfb><E:/miktex/fonts/type1/urw/times/utmr8a.pfb><E:/miktex/fonts/type1/
 vntex/urwvn/utmr8v.pfb><E:/miktex/fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on report_final.pdf (29 pages, 434104 bytes).
+Output written on report4.pdf (8 pages, 251757 bytes).
 PDF statistics:
- 1002 PDF objects out of 1200 (max. 8388607)
- 194 named destinations out of 1000 (max. 500000)
- 530 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 285 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 

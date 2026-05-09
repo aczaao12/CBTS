@@ -1,0 +1,18 @@
+\babel@toc {vietnamese}{}\relax 
+\contentsline {section}{\numberline {0.1}Mở đầu}{1}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Phân tích đặc tính sinh học và cấu trúc cơ thịt bạch tuộc}{1}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Quy trình sơ chế và xử lý tiền chế biến (Preliminary Processing)}{1}{section.0.3}%
+\contentsline {subsection}{\numberline {0.3.1}Tiếp nhận và xử lý cơ học ban đầu}{1}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {0.3.2}Kỹ thuật xử lý dịch nhớt và cải thiện cấu trúc}{2}{subsection.0.3.2}%
+\contentsline {section}{\numberline {0.4}Công nghệ muối bạch tuộc (Salting)}{2}{section.0.4}%
+\contentsline {subsection}{\numberline {0.4.1}Lựa chọn phương pháp muối ướt (Wet Salting)}{2}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {0.4.2}Động học của hoạt độ nước ($a_w$) trong bảo quản}{2}{subsection.0.4.2}%
+\contentsline {section}{\numberline {0.5}Công nghệ sấy bạch tuộc (Drying)}{3}{section.0.5}%
+\contentsline {subsection}{\numberline {0.5.1}Hiện tượng tạo màng (Case Hardening)}{3}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {0.5.2}So sánh các phương pháp sấy}{3}{subsection.0.5.2}%
+\contentsline {section}{\numberline {0.6}Công nghệ xông khói bạch tuộc (Smoking)}{3}{section.0.6}%
+\contentsline {subsection}{\numberline {0.6.1}Cơ chế bảo quản và tạo màu}{3}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {0.6.2}Lựa chọn nguồn gỗ xông khói}{3}{subsection.0.6.2}%
+\contentsline {section}{\numberline {0.7}Đánh giá chất lượng và tiêu chuẩn an toàn (TCVN 5649:2006)}{4}{section.0.7}%
+\contentsline {section}{\numberline {0.8}Kết luận và khuyến nghị}{4}{section.0.8}%
+\contentsline {section}{Tài liệu tham khảo}{5}{chapter*.5}%
